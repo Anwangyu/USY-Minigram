@@ -1,0 +1,10 @@
+<t-navbar>
+    <view slot="left">
+        <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片" />
+    </view>
+</t-navbar>
+
+<text>
+    校友会界面123132
+    测试
+</text>

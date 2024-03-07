@@ -1,0 +1,15 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-navbar": "tdesign-miniprogram/navbar/navbar",
+    "t-image": "tdesign-miniprogram/image/image",
+    "t-avatar": "tdesign-miniprogram/avatar/avatar",
+    "t-tag": "tdesign-miniprogram/tag/tag",
+    "t-check-tag": "tdesign-miniprogram/check-tag/check-tag",
+    "t-divider": "tdesign-miniprogram/divider/divider",
+    "t-back-top": "tdesign-miniprogram/back-top/back-top",
+    "t-button": "tdesign-miniprogram/button/button"
+
+
+  }
+}
