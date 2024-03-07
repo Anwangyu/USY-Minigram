@@ -1,0 +1,26 @@
+<t-navbar>
+    <view slot="left">
+        <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片"/>
+    </view>
+</t-navbar>
+<view class="indexPage">
+    <view class="searchBar">
+        <t-search placeholder="搜索" shape="round" />
+    </view>
+    <t-swiper
+            current="{{current}}"
+            autoplay="{{autoplay}}"
+            duration="{{duration}}"
+            interval="{{interval}}"
+            navigation="{{ { type: 'dots' } }}"
+            list="{{swiperList}}"
+            bind:click="onTap"
+            bind:change="onChange"
+            bind:image-load="onImageLoad"
+    >
+    </t-swiper>
+</view>
+
+
+
+

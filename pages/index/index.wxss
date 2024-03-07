@@ -1,0 +1,28 @@
+/**index.wxss**/
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-image {
+    height: 50rpx;
+    width: 200rpx;
+}
+
+.indexPageLodingNotice {
+    text-align: center;
+}
+
+.indexPage {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.inline {
+    display: inline;
+}
+.searchBar{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

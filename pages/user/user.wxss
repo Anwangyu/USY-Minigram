@@ -1,0 +1,40 @@
+
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-image {
+    height: 50rpx;
+    width: 200rpx;
+}
+
+.userPage{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.userInfoCard{
+    height: 180px;
+    padding: 20px;
+    background: linear-gradient(135deg, #abdcff, #41adff);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #efefef;
+}
+
+.userAvatar{
+    float: left;
+
+}
+.userInfo{
+    float: left;
+    margin-left: 20px;
+
+}
+
+.userName{
+    font-size: 24px;
+}
+.userCardID{
+}

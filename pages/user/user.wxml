@@ -1,0 +1,27 @@
+<t-navbar>
+    <view slot="left">
+        <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片"/>
+    </view>
+</t-navbar>
+
+<view class="userPage">
+    <view class="userInfoCard">
+        <view class="userAvatar">
+            <t-avatar image="{{avatarImage}}" size="large"/>
+        </view>
+        <view class="userInfo">
+            <view class="userName">晚上好，KINDYEAR</view>
+            <view class="userCardID">
+                <t-tag class="margin-16" variant="light" theme="primary">ID: 20240307001</t-tag>
+            </view>
+        </view>
+    </view>
+    <t-button theme="light" size="small">123</t-button>
+
+</view>
+<t-back-top
+        theme="{{backTopTheme}}"
+        text="{{backTopText}}"
+        scroll-top="{{scrollTop}}"
+        bind:to-top="onToTop"
+></t-back-top>
