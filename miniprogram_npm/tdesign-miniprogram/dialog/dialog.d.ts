@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class Dialog extends SuperComponent {
     options: {
         multipleSlots: boolean;
@@ -12,7 +13,7 @@ export default class Dialog extends SuperComponent {
         buttonVariant: string;
     };
     observers: {
-        'confirmBtn, cancelBtn'(confirm: any, cancel: any): void;
+        "confirmBtn, cancelBtn"(confirm: any, cancel: any): void;
     };
     methods: {
         onTplButtonTap(e: any): void;

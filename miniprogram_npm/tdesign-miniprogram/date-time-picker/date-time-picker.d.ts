@@ -1,5 +1,6 @@
-import type { Dayjs } from 'dayjs';
-import { SuperComponent } from '../common/src/index';
+import type {Dayjs} from "dayjs";
+import {SuperComponent} from "../common/src/index";
+
 declare enum ModeItem {
     YEAR = "year",
     MONTH = "month",
@@ -8,10 +9,12 @@ declare enum ModeItem {
     MINUTE = "minute",
     SECOND = "second"
 }
+
 interface ColumnItemValue {
     value: string | number;
     label: string | number;
 }
+
 export default class DateTimePicker extends SuperComponent {
     properties: import("./type").TdDateTimePickerProps;
     externalClasses: string[];
@@ -19,7 +22,7 @@ export default class DateTimePicker extends SuperComponent {
         multipleSlots: boolean;
     };
     observers: {
-        'start, end, value': () => void;
+        "start, end, value": () => void;
         customLocale(v: any): void;
         mode(m: any): void;
     };
@@ -50,7 +53,7 @@ export default class DateTimePicker extends SuperComponent {
         getColumnOptions(): any[];
         getOptionByType(type: any): ColumnItemValue[];
         getYearOptions(dateParams: any): ColumnItemValue[];
-        getOptionEdge(minOrMax: 'min' | 'max', type: any): any;
+        getOptionEdge(minOrMax: "min" | "max", type: any): any;
         getMonthOptions(): ColumnItemValue[];
         getDayOptions(): ColumnItemValue[];
         getHourOptions(): ColumnItemValue[];
@@ -68,8 +71,11 @@ export default class DateTimePicker extends SuperComponent {
         onClose(e: any): void;
         resetColumns(): void;
     };
+
     getFullModeArray(mode: any): any;
+
     getFullModeByModeString(modeString: any, matchModes: any): any;
+
     isTimeMode(): boolean;
 }
 export {};

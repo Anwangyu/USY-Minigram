@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class Progress extends SuperComponent {
     externalClasses: string[];
     options: {
@@ -14,7 +15,9 @@ export default class Progress extends SuperComponent {
         computedProgress: number;
         isIOS: boolean;
     };
+
     attached(): void;
+
     observers: {
         percentage(percentage: any): void;
         color(color: any): void;

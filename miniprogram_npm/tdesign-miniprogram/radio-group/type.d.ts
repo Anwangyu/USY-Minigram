@@ -1,9 +1,10 @@
-import { RadioValue } from '../radio/type';
-import { KeysType } from '../common/common';
+import {RadioValue} from "../radio/type";
+import {KeysType} from "../common/common";
+
 export interface TdRadioGroupProps<T = RadioValue> {
     placement?: {
         type: StringConstructor;
-        value?: 'left' | 'right';
+        value?: "left" | "right";
     };
     borderless?: {
         type: BooleanConstructor;
@@ -19,7 +20,7 @@ export interface TdRadioGroupProps<T = RadioValue> {
     };
     icon?: {
         type: null;
-        value?: 'circle' | 'line' | 'dot' | Array<string>;
+        value?: "circle" | "line" | "dot" | Array<string>;
     };
     keys?: {
         type: ObjectConstructor;
@@ -42,7 +43,9 @@ export interface TdRadioGroupProps<T = RadioValue> {
         value?: T;
     };
 }
+
 export declare type RadioOption = string | number | RadioOptionObj;
+
 export interface RadioOptionObj {
     label?: string;
     value?: string | number;

@@ -1,7 +1,7 @@
 export interface TdDividerProps {
     align?: {
         type: StringConstructor;
-        value?: 'left' | 'right' | 'center';
+        value?: "left" | "right" | "center";
     };
     content?: {
         type: StringConstructor;
@@ -17,10 +17,10 @@ export interface TdDividerProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-line', 't-class-content'];
+        value?: ["t-class", "t-class-line", "t-class-content"];
     };
     layout?: {
         type: StringConstructor;
-        value?: 'horizontal' | 'vertical';
+        value?: "horizontal" | "vertical";
     };
 }

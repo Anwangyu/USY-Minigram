@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class Search extends SuperComponent {
     externalClasses: string[];
     options: {
@@ -10,10 +11,16 @@ export default class Search extends SuperComponent {
         classPrefix: string;
         prefix: string;
     };
+
     onInput(e: any): void;
+
     onFocus(e: any): void;
+
     onBlur(e: any): void;
+
     handleClear(): void;
+
     onConfirm(e: any): void;
+
     onActionClick(): void;
 }

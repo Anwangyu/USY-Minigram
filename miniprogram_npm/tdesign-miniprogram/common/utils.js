@@ -1,4 +1,5 @@
-import { prefix } from './config';
+import {prefix} from './config';
+
 const systemInfo = wx.getSystemInfoSync();
 export const debounce = function (func, wait = 500) {
     let timerId;
@@ -44,14 +45,12 @@ export const classNames = function (...args) {
         const argType = typeof arg;
         if (argType === 'string' || argType === 'number') {
             classes.push(arg);
-        }
-        else if (Array.isArray(arg) && arg.length) {
+        } else if (Array.isArray(arg) && arg.length) {
             const inner = classNames(...arg);
             if (inner) {
                 classes.push(inner);
             }
-        }
-        else if (argType === 'object') {
+        } else if (argType === 'object') {
             for (const key in arg) {
                 if (hasOwn.call(arg, key) && arg[key]) {
                     classes.push(key);
@@ -73,21 +72,20 @@ export const getAnimationFrame = function (context, cb) {
         .selectViewport()
         .boundingClientRect()
         .exec(() => {
-        cb();
-    });
+            cb();
+        });
 };
 export const getRect = function (context, selector, needAll = false) {
     return new Promise((resolve, reject) => {
         wx.createSelectorQuery()
             .in(context)[needAll ? 'selectAll' : 'select'](selector)
             .boundingClientRect((rect) => {
-            if (rect) {
-                resolve(rect);
-            }
-            else {
-                reject(rect);
-            }
-        })
+                if (rect) {
+                    resolve(rect);
+                } else {
+                    reject(rect);
+                }
+            })
             .exec();
     });
 };
@@ -122,8 +120,7 @@ export const getCharacterLength = (type, char, max) => {
             let currentStringLength = 0;
             if (str.charCodeAt(i) > 127 || str.charCodeAt(i) === 94) {
                 currentStringLength = 2;
-            }
-            else {
+            } else {
                 currentStringLength = 1;
             }
             if (len + currentStringLength > max) {
@@ -138,8 +135,7 @@ export const getCharacterLength = (type, char, max) => {
             length: len,
             characters: str,
         };
-    }
-    else if (type === 'maxlength') {
+    } else if (type === 'maxlength') {
         const length = str.length > max ? max : str.length;
         return {
             length,
@@ -151,7 +147,7 @@ export const getCharacterLength = (type, char, max) => {
         characters: str,
     };
 };
-export const chunk = (arr, size) => Array.from({ length: Math.ceil(arr.length / size) }, (v, i) => arr.slice(i * size, i * size + size));
+export const chunk = (arr, size) => Array.from({length: Math.ceil(arr.length / size)}, (v, i) => arr.slice(i * size, i * size + size));
 export const getInstance = function (context, selector) {
     if (!context) {
         const pages = getCurrentPages();
@@ -182,14 +178,12 @@ export const setIcon = (iconName, icon, defaultIcon) => {
                 [`${iconName}Name`]: icon,
                 [`${iconName}Data`]: {},
             };
-        }
-        else if (typeof icon === 'object') {
+        } else if (typeof icon === 'object') {
             return {
                 [`${iconName}Name`]: '',
                 [`${iconName}Data`]: icon,
             };
-        }
-        else {
+        } else {
             return {
                 [`${iconName}Name`]: defaultIcon,
                 [`${iconName}Data`]: {},
@@ -215,7 +209,7 @@ export const uniqueFactory = (compName) => {
 };
 export const calcIcon = (icon, defaultIcon) => {
     if ((isBool(icon) && icon && defaultIcon) || isString(icon)) {
-        return { name: isBool(icon) ? defaultIcon : icon };
+        return {name: isBool(icon) ? defaultIcon : icon};
     }
     if (isObject(icon)) {
         return icon;

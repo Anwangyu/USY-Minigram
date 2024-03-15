@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class extends SuperComponent {
     options: {
         multipleSlots: boolean;
@@ -13,7 +14,7 @@ export default class extends SuperComponent {
         ready(): void;
     };
     observers: {
-        'icon, theme'(): void;
+        "icon, theme"(): void;
     };
     methods: {
         initIcon(): void;

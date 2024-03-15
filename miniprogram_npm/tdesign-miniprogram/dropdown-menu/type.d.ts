@@ -13,7 +13,7 @@ export interface TdDropdownMenuProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-item', 't-class-label', 't-class-icon'];
+        value?: ["t-class", "t-class-item", "t-class-label", "t-class-icon"];
     };
     showOverlay?: {
         type: BooleanConstructor;

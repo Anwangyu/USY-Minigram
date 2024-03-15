@@ -21,7 +21,7 @@ export interface TdRateProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-icon', 't-class-text'];
+        value?: ["t-class", "t-class-icon", "t-class-text"];
     };
     gap?: {
         type: null;
@@ -58,6 +58,6 @@ export interface TdRateProps {
     };
     placement?: {
         type: StringConstructor;
-        value?: 'top' | 'bottom';
+        value?: "top" | "bottom";
     };
 }

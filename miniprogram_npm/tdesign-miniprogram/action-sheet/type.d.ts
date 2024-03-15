@@ -1,7 +1,7 @@
 export interface TdActionSheetProps {
     align?: {
         type: StringConstructor;
-        value?: 'center' | 'left';
+        value?: "center" | "left";
     };
     cancelText?: {
         type: StringConstructor;
@@ -33,7 +33,7 @@ export interface TdActionSheetProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'list' | 'grid';
+        value?: "list" | "grid";
     };
     visible: {
         type: BooleanConstructor;
@@ -44,6 +44,7 @@ export interface TdActionSheetProps {
         value?: boolean;
     };
 }
+
 export interface ActionSheetItem {
     label: string;
     color?: string;

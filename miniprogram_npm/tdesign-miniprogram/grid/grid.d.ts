@@ -1,4 +1,5 @@
-import { SuperComponent, RelationsOptions } from '../common/src/index';
+import {RelationsOptions, SuperComponent} from "../common/src/index";
+
 export default class Grid extends SuperComponent {
     externalClasses: string[];
     relations: RelationsOptions;
@@ -9,8 +10,8 @@ export default class Grid extends SuperComponent {
         contentStyle: string;
     };
     observers: {
-        'column,hover,align'(): void;
-        'gutter,border'(): void;
+        "column,hover,align"(): void;
+        "gutter,border"(): void;
     };
     lifetimes: {
         attached(): void;

@@ -1,4 +1,5 @@
-import { TdTransitionProps } from '../transition/index';
+import {TdTransitionProps} from "../transition/index";
+
 export interface TdPopupProps {
     closeBtn?: {
         type: BooleanConstructor;
@@ -22,7 +23,7 @@ export interface TdPopupProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-overlay', 't-class-content'];
+        value?: ["t-class", "t-class-overlay", "t-class-content"];
     };
     overlayProps?: {
         type: ObjectConstructor;
@@ -30,7 +31,7 @@ export interface TdPopupProps {
     };
     placement?: {
         type: StringConstructor;
-        value?: 'top' | 'left' | 'right' | 'bottom' | 'center';
+        value?: "top" | "left" | "right" | "bottom" | "center";
     };
     preventScrollThrough?: {
         type: BooleanConstructor;
@@ -57,6 +58,7 @@ export interface TdPopupProps {
         value?: number;
     };
 }
+
 export interface PopupVisibleChangeContext {
-    trigger: 'close-btn' | 'overlay';
+    trigger: "close-btn" | "overlay";
 }

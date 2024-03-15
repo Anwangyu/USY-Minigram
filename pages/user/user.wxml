@@ -7,16 +7,36 @@
 <view class="userPage">
     <view class="userInfoCard">
         <view class="userAvatar">
-            <t-avatar image="{{avatarImage}}" size="large"/>
+            <image src="{{avatarImage}}" class="userAvatarImg"/>
         </view>
         <view class="userInfo">
-            <view class="userName">晚上好，KINDYEAR</view>
-            <view class="userCardID">
-                <t-tag class="margin-16" variant="light" theme="primary">ID: 20240307001</t-tag>
-            </view>
+            <text class="userInfoName">晚上好，KINDYEAR</text>
         </view>
     </view>
-    <t-button theme="light" size="small">123</t-button>
+
+    <!--<t-row gutter="16">
+        <t-col span="8" t-class="dark">col-8</t-col>
+        <t-col span="8" t-class="light">col-8</t-col>
+        <t-col span="8" t-class="dark">col-8</t-col>
+    </t-row>
+
+    <t-row gutter="16">
+        <t-col span="8" t-class="dark">col-8</t-col>
+        <t-col span="8" t-class="light">col-8</t-col>
+        <t-col span="8" t-class="dark">col-8</t-col>
+    </t-row>
+
+    <t-row gutter="16">
+        <t-col span="8" t-class="dark">col-8</t-col>
+        <t-col span="8" t-class="light">col-8</t-col>
+        <t-col span="8" t-class="dark">col-8</t-col>
+    </t-row>-->
+
+    <t-cell-group theme="card">
+        <t-cell title="联系工作人员" leftIcon="service" hover arrow/>
+        <t-cell title="官方网站" leftIcon="internet" hover arrow/>
+        <t-cell title="退出登录" leftIcon="lock-on" hover arrow/>
+    </t-cell-group>
 
 </view>
 <t-back-top

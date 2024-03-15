@@ -1,14 +1,14 @@
 export interface TdGridProps {
     align?: {
         type: StringConstructor;
-        value?: 'left' | 'center';
+        value?: "left" | "center";
     };
     border?: {
         type: null;
         value?: boolean | {
             color?: string;
             width?: string;
-            style?: 'solid' | 'dashed' | 'dotted' | 'double' | 'groove' | 'inset' | 'outset';
+            style?: "solid" | "dashed" | "dotted" | "double" | "groove" | "inset" | "outset";
         };
     };
     column?: {
@@ -21,7 +21,7 @@ export interface TdGridProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     gutter?: {
         type: NumberConstructor;
@@ -33,6 +33,6 @@ export interface TdGridProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'card';
+        value?: "default" | "card";
     };
 }

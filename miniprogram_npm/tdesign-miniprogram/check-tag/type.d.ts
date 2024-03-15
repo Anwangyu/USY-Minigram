@@ -1,4 +1,5 @@
-import { SizeEnum } from '../common/common';
+import {SizeEnum} from "../common/common";
+
 export interface TdCheckTagProps {
     checked?: {
         type: BooleanConstructor;
@@ -26,7 +27,7 @@ export interface TdCheckTagProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     icon?: {
         type: null;
@@ -34,7 +35,7 @@ export interface TdCheckTagProps {
     };
     shape?: {
         type: StringConstructor;
-        value?: 'square' | 'round' | 'mark';
+        value?: "square" | "round" | "mark";
     };
     size?: {
         type: StringConstructor;
@@ -42,6 +43,6 @@ export interface TdCheckTagProps {
     };
     variant?: {
         type: StringConstructor;
-        value?: 'dark' | 'light' | 'outline' | 'light-outline';
+        value?: "dark" | "light" | "outline" | "light-outline";
     };
 }

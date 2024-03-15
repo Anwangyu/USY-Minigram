@@ -10,6 +10,7 @@ import tc from './tc';
 import ko from './ko';
 import ja from './ja';
 import ru from './ru';
+
 export default {
     default: {
         key: 'zh-cn',

@@ -9,11 +9,11 @@ export interface TdNoticeBarProps {
     };
     direction?: {
         type: StringConstructor;
-        value?: 'horizontal' | 'vertical';
+        value?: "horizontal" | "vertical";
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-content', 't-class-prefix-icon', 't-class-operation', 't-class-suffix-icon'];
+        value?: ["t-class", "t-class-content", "t-class-prefix-icon", "t-class-operation", "t-class-suffix-icon"];
     };
     operation?: {
         type: StringConstructor;
@@ -37,7 +37,7 @@ export interface TdNoticeBarProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'info' | 'success' | 'warning' | 'error';
+        value?: "info" | "success" | "warning" | "error";
     };
     visible?: {
         type: BooleanConstructor;
@@ -48,7 +48,9 @@ export interface TdNoticeBarProps {
         value?: boolean;
     };
 }
-export declare type NoticeBarTrigger = 'prefix-icon' | 'content' | 'operation' | 'suffix-icon';
+
+export declare type NoticeBarTrigger = "prefix-icon" | "content" | "operation" | "suffix-icon";
+
 export interface DrawMarquee {
     speed?: number;
     loop?: number;

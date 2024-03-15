@@ -1,5 +1,6 @@
-import { LoadingProps } from '../loading/index';
-import { SizeEnum } from '../common/common';
+import {LoadingProps} from "../loading/index";
+import {SizeEnum} from "../common/common";
+
 export interface TdButtonProps {
     tId?: {
         type: StringConstructor;
@@ -23,7 +24,7 @@ export interface TdButtonProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-icon', 't-class-loading'];
+        value?: ["t-class", "t-class-icon", "t-class-loading"];
     };
     ghost?: {
         type: BooleanConstructor;
@@ -43,7 +44,7 @@ export interface TdButtonProps {
     };
     shape?: {
         type: StringConstructor;
-        value?: 'rectangle' | 'square' | 'round' | 'circle';
+        value?: "rectangle" | "square" | "round" | "circle";
     };
     size?: {
         type: StringConstructor;
@@ -51,19 +52,19 @@ export interface TdButtonProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'primary' | 'danger';
+        value?: "default" | "primary" | "danger";
     };
     type?: {
         type: StringConstructor;
-        value?: 'submit' | 'reset';
+        value?: "submit" | "reset";
     };
     variant?: {
         type: StringConstructor;
-        value?: 'base' | 'outline' | 'text';
+        value?: "base" | "outline" | "text";
     };
     openType?: {
         type: StringConstructor;
-        value?: 'contact' | 'share' | 'getPhoneNumber' | 'getUserInfo' | 'launchApp' | 'openSetting' | 'feedback' | 'chooseAvatar' | 'agreePrivacyAuthorization';
+        value?: "contact" | "share" | "getPhoneNumber" | "getUserInfo" | "launchApp" | "openSetting" | "feedback" | "chooseAvatar" | "agreePrivacyAuthorization";
     };
     hoverClass?: {
         type: StringConstructor;
@@ -83,7 +84,7 @@ export interface TdButtonProps {
     };
     lang?: {
         type: StringConstructor;
-        value?: 'en' | 'zh_CN' | 'zh_TW';
+        value?: "en" | "zh_CN" | "zh_TW";
     };
     sessionFrom?: {
         type: StringConstructor;

@@ -1,4 +1,5 @@
-import { SuperComponent, RelationsOptions } from '../common/src/index';
+import {SuperComponent, RelationsOptions} from "../common/src/index";
+
 export default class Picker extends SuperComponent {
     properties: import("./type").TdPickerProps;
     externalClasses: string[];
@@ -7,7 +8,7 @@ export default class Picker extends SuperComponent {
     };
     relations: RelationsOptions;
     observers: {
-        'value, visible'(): void;
+        "value, visible"(): void;
         keys(obj: any): void;
     };
     data: {
@@ -23,7 +24,7 @@ export default class Picker extends SuperComponent {
         getSelectedValue(): any[];
         getColumnIndexes(): any;
         onConfirm(): void;
-        triggerColumnChange({ column, index }: {
+        triggerColumnChange({column, index}: {
             column: any;
             index: any;
         }): void;
@@ -31,5 +32,6 @@ export default class Picker extends SuperComponent {
         onPopupChange(e: any): void;
         close(trigger: any): void;
     };
+
     ready(): void;
 }

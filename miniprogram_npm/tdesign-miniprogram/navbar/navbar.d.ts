@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class Navbar extends SuperComponent {
     externalClasses: string[];
     timer: any;
@@ -9,7 +10,7 @@ export default class Navbar extends SuperComponent {
     properties: import("./type").TdNavbarProps;
     observers: {
         visible(this: Navbar, visible: any): void;
-        'title,titleMaxLength'(this: any): void;
+        "title,titleMaxLength"(this: any): void;
     };
     data: {
         prefix: string;
@@ -17,7 +18,9 @@ export default class Navbar extends SuperComponent {
         boxStyle: string;
         showTitle: string;
     };
+
     attached(): void;
+
     methods: {
         goBack(): void;
     };

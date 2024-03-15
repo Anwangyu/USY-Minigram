@@ -3,6 +3,7 @@ page {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #f6f6f6;
 }
 
 .custom-image {
@@ -22,7 +23,74 @@ page {
 .inline {
     display: inline;
 }
-.searchBar{
+
+.searchBar {
     margin-top: 5px;
     margin-bottom: 10px;
+}
+.block {
+    display: block;
+    margin-bottom: 32rpx;
+    margin-top: 20px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.newsDemoBlock{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.newsDemoBlockTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.newsDemo{
+    box-sizing: border-box;
+    height: 200px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: var(--td-grid-card-radius, var(--td-radius-large, 18rpx));
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+}
+
+.newsTitleBlurBackground{
+}
+
+.newsDemoTitle{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: #545454 2px 2px 8px;
+}
+
+.newDemoSubTitle{
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: #545454 2px 2px 8px;
+}
+
+.footerBlock{
+    height: 100px;
+    background-color: #f6f6f6;
+}
+
+
+#demo1{
+    background-image: url("http://www.sanyau.edu.cn/upfile/images/20240305/17096032573228681.jpeg");
+}
+#demo2{
+    background-image: url("http://www.sanyau.edu.cn/upfile/images/20240314/17103877602897993.jpg");
+}
+#demo3{
+    background-image: url("http://www.sanyau.edu.cn/upfile/2024/3/5/202435172759280.jpg");
+}
+#demo4{
+    background-image: url("http://www.sanyau.edu.cn/upfile/images/20240226/17089349947318617.png");
 }

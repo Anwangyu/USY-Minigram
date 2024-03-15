@@ -3,7 +3,7 @@ export const getObserver = (context, selector) => {
         wx.createIntersectionObserver(context)
             .relativeToViewport()
             .observe(selector, (res) => {
-            resolve(res);
-        });
+                resolve(res);
+            });
     });
 };

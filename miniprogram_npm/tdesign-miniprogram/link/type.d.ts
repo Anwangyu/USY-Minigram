@@ -1,4 +1,5 @@
-import { SizeEnum } from '../common/common';
+import {SizeEnum} from "../common/common";
+
 export interface TdLinkProps {
     content?: {
         type: StringConstructor;
@@ -18,7 +19,7 @@ export interface TdLinkProps {
     };
     status?: {
         type: StringConstructor;
-        value?: 'normal' | 'active' | 'disabled';
+        value?: "normal" | "active" | "disabled";
     };
     disabled?: {
         type: BooleanConstructor;
@@ -34,7 +35,7 @@ export interface TdLinkProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'primary' | 'danger' | 'warning' | 'success';
+        value?: "default" | "primary" | "danger" | "warning" | "success";
     };
     underline?: {
         type: BooleanConstructor;

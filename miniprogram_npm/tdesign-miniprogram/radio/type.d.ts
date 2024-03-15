@@ -1,7 +1,7 @@
 export interface TdRadioProps<T = RadioValue> {
     placement?: {
         type: StringConstructor;
-        value?: 'left' | 'right';
+        value?: "left" | "right";
     };
     allowUncheck?: {
         type: BooleanConstructor;
@@ -41,11 +41,11 @@ export interface TdRadioProps<T = RadioValue> {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-icon', 't-class-label', 't-class-content', 't-class-border'];
+        value?: ["t-class", "t-class-icon", "t-class-label", "t-class-content", "t-class-border"];
     };
     icon?: {
         type: null;
-        value?: 'circle' | 'line' | Array<string>;
+        value?: "circle" | "line" | Array<string>;
     };
     label?: {
         type: StringConstructor;
@@ -68,4 +68,5 @@ export interface TdRadioProps<T = RadioValue> {
         value?: T;
     };
 }
+
 export declare type RadioValue = string | number | boolean;

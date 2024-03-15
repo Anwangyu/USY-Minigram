@@ -9,7 +9,7 @@ export interface TdTabBarProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     fixed?: {
         type: BooleanConstructor;
@@ -21,7 +21,7 @@ export interface TdTabBarProps {
     };
     shape?: {
         type: StringConstructor;
-        value?: 'normal' | 'round';
+        value?: "normal" | "round";
     };
     split?: {
         type: BooleanConstructor;
@@ -29,7 +29,7 @@ export interface TdTabBarProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'normal' | 'tag';
+        value?: "normal" | "tag";
     };
     value?: {
         type: null;

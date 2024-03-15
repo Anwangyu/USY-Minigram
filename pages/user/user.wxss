@@ -3,6 +3,7 @@ page {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #f6f6f6;
 }
 
 .custom-image {
@@ -10,31 +11,68 @@ page {
     width: 200rpx;
 }
 
-.userPage{
-    margin-left: 20px;
-    margin-right: 20px;
+.userPage {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.userInfoCard{
-    height: 180px;
+.userInfoCard {
+    margin-bottom: 20px;
+    height: 120px;
     padding: 20px;
-    background: linear-gradient(135deg, #abdcff, #41adff);
+    background: linear-gradient(278deg, #70c7ff, #7caada);
     border-radius: 20px;
     box-shadow: 1px 1px 10px #efefef;
+    display: flex;
 }
 
-.userAvatar{
-    float: left;
-
-}
 .userInfo{
+    display: flex;
+}
+
+.userInfoName{
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.userAvatar {
+    float: left;
+}
+.userAvatarImg{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+}
+
+.userInfo {
+    display: flex;
     float: left;
     margin-left: 20px;
-
+    font-size: 20px;
+    text-align: center;
 }
 
-.userName{
-    font-size: 24px;
+.userCardID {
 }
-.userCardID{
+
+.dark {
+    background-color: #0052d9;
 }
+
+.light {
+    background-color: #366ef4;
+}
+
+.dark,
+.light {
+    background-clip: content-box;
+    color: #fff;
+    font-size: 28rpx;
+    line-height: 96rpx;
+    margin-bottom: 32rpx;
+    text-align: center;
+}
+
+

@@ -9,7 +9,7 @@ export interface TdSliderProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-bar', 't-class-bar-active', 't-class-bar-disabled', 't-class-cursor'];
+        value?: ["t-class", "t-class-bar", "t-class-bar-active", "t-class-bar-disabled", "t-class-cursor"];
     };
     label?: {
         type: null;
@@ -41,7 +41,7 @@ export interface TdSliderProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'capsule';
+        value?: "default" | "capsule";
     };
     value?: {
         type: null;
@@ -56,4 +56,5 @@ export interface TdSliderProps {
         value?: boolean;
     };
 }
+
 export declare type SliderValue = number | Array<number>;

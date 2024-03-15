@@ -1,4 +1,5 @@
-import { TreeOptionData, KeysType } from '../common/common';
+import {TreeOptionData, KeysType} from "../common/common";
+
 export interface TdCascaderProps<CascaderOption extends TreeOptionData = TreeOptionData> {
     closeBtn?: {
         type: BooleanConstructor;
@@ -18,7 +19,7 @@ export interface TdCascaderProps<CascaderOption extends TreeOptionData = TreeOpt
     };
     theme?: {
         type: StringConstructor;
-        value?: 'step' | 'tab';
+        value?: "step" | "tab";
     };
     title?: {
         type: StringConstructor;

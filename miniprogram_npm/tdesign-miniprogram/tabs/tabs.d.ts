@@ -1,7 +1,9 @@
-import { SuperComponent, RelationsOptions } from '../common/src/index';
-import { TdTabsProps } from './type';
+import {SuperComponent, RelationsOptions} from "../common/src/index";
+import {TdTabsProps} from "./type";
+
 export interface TabsProps extends TdTabsProps {
 }
+
 export default class Tabs extends SuperComponent {
     behaviors: string[];
     externalClasses: string[];
@@ -29,7 +31,9 @@ export default class Tabs extends SuperComponent {
         created(): void;
         attached(): void;
     };
+
     initChildId(): void;
+
     methods: {
         onScroll(e: any): void;
         updateTabs(cb: any): void;

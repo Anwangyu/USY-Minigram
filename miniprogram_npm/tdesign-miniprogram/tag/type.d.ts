@@ -1,4 +1,5 @@
-import { SizeEnum } from '../common/common';
+import {SizeEnum} from "../common/common";
+
 export interface TdTagProps {
     closable?: {
         type: null;
@@ -14,7 +15,7 @@ export interface TdTagProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     icon?: {
         type: null;
@@ -26,7 +27,7 @@ export interface TdTagProps {
     };
     shape?: {
         type: StringConstructor;
-        value?: 'square' | 'round' | 'mark';
+        value?: "square" | "round" | "mark";
     };
     size?: {
         type: StringConstructor;
@@ -34,10 +35,10 @@ export interface TdTagProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'primary' | 'warning' | 'danger' | 'success';
+        value?: "default" | "primary" | "warning" | "danger" | "success";
     };
     variant?: {
         type: StringConstructor;
-        value?: 'dark' | 'light' | 'outline' | 'light-outline';
+        value?: "dark" | "light" | "outline" | "light-outline";
     };
 }

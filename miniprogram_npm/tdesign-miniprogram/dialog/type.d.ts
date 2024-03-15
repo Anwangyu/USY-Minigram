@@ -1,4 +1,5 @@
-import { ButtonProps } from '../button/index';
+import {ButtonProps} from "../button/index";
+
 export interface TdDialogProps {
     actions?: {
         type: ArrayConstructor;
@@ -6,7 +7,7 @@ export interface TdDialogProps {
     };
     buttonLayout?: {
         type: StringConstructor;
-        value?: 'horizontal' | 'vertical';
+        value?: "horizontal" | "vertical";
     };
     cancelBtn?: {
         type: null;
@@ -34,7 +35,7 @@ export interface TdDialogProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-content', 't-class-confirm', 't-class-cancel'];
+        value?: ["t-class", "t-class-content", "t-class-confirm", "t-class-cancel"];
     };
     overlayProps?: {
         type: ObjectConstructor;

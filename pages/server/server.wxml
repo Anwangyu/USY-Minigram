@@ -1,0 +1,51 @@
+<t-navbar>
+    <view slot="left">
+        <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片"/>
+    </view>
+</t-navbar>
+
+<view class="alumniPage">
+
+
+    <view class="schoolInfoCard">
+        <t-avatar image="{{avatarImage}}"/>
+        <view class="custom-image-container" size="large">
+            <image class="custom-USYimage" src="https://img2.imgtp.com/2024/03/08/6Oan6sNx.png" mode="aspectFill">
+            </image>
+
+        </view>
+        <view class="images-container">
+            <image class="applyforId" src="https://img2.imgtp.com/2024/03/08/ySpvrQGh.png">
+            </image>
+            <text class="textSize">
+                校园卡申领
+            </text>
+            <image class="registerforId" src="https://img2.imgtp.com/2024/03/09/3X7sjoFN.png">
+            </image>
+            <text class="textSize">
+                注册认证
+            </text>
+        </view>
+    </view>
+</view>
+<view class="functionalComponent">
+    <!-- <view class="button-row">
+        <t-button size="large" shape="circle" aria-label="测试">
+            <image src="{{searchIconSrc}}" class="icon-image" />
+        </t-button>
+        <t-button size="large" shape="circle" aria-label="测试">
+            <image src="{{searchIconSrc}}" class="icon-image" />
+        </t-button>
+        <t-button size="large" shape="circle" aria-label="测试">
+            <image src="{{searchIconSrc}}" class="icon-image" />
+        </t-button>
+    </view> -->
+    <!-- 在组件的 wxml 文件中 -->
+    <template name="custom-button">
+        <view class="custom-button" bindtap="onClick">
+            <image src="{{imageUrl}}" class="button-image"/>
+        </view>
+    </template>
+
+
+</view>

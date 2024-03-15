@@ -1,11 +1,11 @@
 export interface TdInputProps {
     align?: {
         type: StringConstructor;
-        value?: 'left' | 'center' | 'right';
+        value?: "left" | "center" | "right";
     };
     layout?: {
         type: StringConstructor;
-        value?: 'horizontal' | 'vertical';
+        value?: "horizontal" | "vertical";
     };
     borderless?: {
         type: BooleanConstructor;
@@ -17,7 +17,7 @@ export interface TdInputProps {
     };
     clearTrigger?: {
         type: StringConstructor;
-        value?: 'always' | 'focus';
+        value?: "always" | "focus";
     };
     style?: {
         type: StringConstructor;
@@ -33,7 +33,7 @@ export interface TdInputProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-input', 't-class-placeholder', 't-class-error-msg'];
+        value?: ["t-class", "t-class-input", "t-class-placeholder", "t-class-error-msg"];
     };
     format?: {
         type: null;
@@ -65,11 +65,11 @@ export interface TdInputProps {
     };
     size?: {
         type: StringConstructor;
-        value?: 'medium' | 'small';
+        value?: "medium" | "small";
     };
     status?: {
         type: StringConstructor;
-        value?: 'default' | 'success' | 'warning' | 'error';
+        value?: "default" | "success" | "warning" | "error";
     };
     suffix?: {
         type: StringConstructor;
@@ -85,7 +85,7 @@ export interface TdInputProps {
     };
     type?: {
         type: StringConstructor;
-        value?: 'text' | 'number' | 'idcard' | 'digit' | 'safe-password' | 'password' | 'nickname';
+        value?: "text" | "number" | "idcard" | "digit" | "safe-password" | "password" | "nickname";
     };
     value?: {
         type: StringConstructor;
@@ -119,7 +119,7 @@ export interface TdInputProps {
     };
     confirmType?: {
         type: StringConstructor;
-        value?: 'send' | 'search' | 'next' | 'go' | 'done';
+        value?: "send" | "search" | "next" | "go" | "done";
     };
     alwaysEmbed?: {
         type: BooleanConstructor;
@@ -174,5 +174,6 @@ export interface TdInputProps {
         value?: string;
     };
 }
+
 export declare type InputFormatType = (value: InputValue) => number | string;
 export declare type InputValue = string | number;

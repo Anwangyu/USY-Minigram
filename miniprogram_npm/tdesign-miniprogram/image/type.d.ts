@@ -9,7 +9,7 @@ export interface TdImageProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-load'];
+        value?: ["t-class", "t-class-load"];
     };
     height?: {
         type: null;
@@ -25,11 +25,11 @@ export interface TdImageProps {
     };
     mode?: {
         type: StringConstructor;
-        value?: 'scaleToFill' | 'aspectFit' | 'aspectFill' | 'widthFix' | 'heightFix' | 'top' | 'bottom' | 'center' | 'left' | 'right' | 'top left' | 'top right' | 'bottom left' | 'bottom right';
+        value?: "scaleToFill" | "aspectFit" | "aspectFill" | "widthFix" | "heightFix" | "top" | "bottom" | "center" | "left" | "right" | "top left" | "top right" | "bottom left" | "bottom right";
     };
     shape?: {
         type: StringConstructor;
-        value?: 'circle' | 'round' | 'square';
+        value?: "circle" | "round" | "square";
     };
     showMenuByLongpress?: {
         type: BooleanConstructor;

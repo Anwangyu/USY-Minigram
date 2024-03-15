@@ -1,4 +1,5 @@
-import { StickyProps } from '../sticky/index';
+import {StickyProps} from "../sticky/index";
+
 export interface TdTabsProps {
     animation?: {
         type: ObjectConstructor;
@@ -6,7 +7,7 @@ export interface TdTabsProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-item', 't-class-active', 't-class-track'];
+        value?: ["t-class", "t-class-item", "t-class-active", "t-class-track"];
     };
     showBottomLine?: {
         type: BooleanConstructor;
@@ -34,7 +35,7 @@ export interface TdTabsProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'line' | 'tag' | 'card';
+        value?: "line" | "tag" | "card";
     };
     value?: {
         type: null;
@@ -45,6 +46,7 @@ export interface TdTabsProps {
         value?: TabValue;
     };
 }
+
 export declare type TabAnimation = {
     duration: number;
 } & Record<string, any>;

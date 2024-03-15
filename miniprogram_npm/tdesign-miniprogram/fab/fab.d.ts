@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class Fab extends SuperComponent {
     properties: import("./type").TdFabProps;
     externalClasses: string[];
@@ -14,7 +15,7 @@ export default class Fab extends SuperComponent {
         moveStyle: any;
     };
     observers: {
-        'buttonProps.**, icon, text, ariaLabel'(): void;
+        "buttonProps.**, icon, text, ariaLabel"(): void;
     };
     methods: {
         onTplButtonTap(e: any): void;

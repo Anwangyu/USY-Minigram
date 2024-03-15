@@ -13,7 +13,7 @@ export interface TdStickyProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     offsetTop?: {
         type: NumberConstructor;

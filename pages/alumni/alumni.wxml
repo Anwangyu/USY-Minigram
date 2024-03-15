@@ -4,8 +4,45 @@
     </view>
 </t-navbar>
 
-<text>
-    校友会界面
-</text>
+<view class="alumniPage">
+    <view class="example-search">
+        <t-search placeholder="请输入组织名称关键字"/>
+    </view>
 
+</view>
+<view class="organisationalChoices">
+    <scroll-view class="scroll-view" scroll-x>
+        <view class="scroll-content">
+            <view class="scroll-item {{item.name === selectedItem ? 'selected' : ''}}" data-item="{{item.name}}"
+                  bindtap="handleItemClick" wx:for="{{scrollItems}}" wx:for-item="item">
+                <text class="scroll-text">{{item.name}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<view class="subtotal">
+    <text class="subtotalText">
+        共有99个组织
+    </text>
+</view>
 
+<view class="organisations">
+    <block wx:for="{{organisationItems}}" wx:for-item="item">
+        <view class="organisation-item">
+            <view class="image-container">
+                <t-image src="{{item.imageSrc}}" class="organisation-image"/>
+            </view>
+            <view class="item-content">
+                <text class="organisation-name">{{item.name}}</text>
+                <view class="actSum">
+                    <text class="activities">{{item.activitiesItems}}</text>
+                    <text class="activityCount">{{item.activityCount}}</text>
+                    <text class="actsumSpace"> </text>
+                    <text class="sum-people">{{item.sumPeople}}</text>
+                    <text class="peopleCount">{{item.peopleCount}}</text>
+                </view>
+                <button class="joinButton" bindtap="handleJoin">加入</button>
+            </view>
+        </view>
+    </block>
+</view>

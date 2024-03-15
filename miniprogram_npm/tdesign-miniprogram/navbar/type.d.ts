@@ -13,7 +13,7 @@ export interface TdNavbarProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-title', 't-class-left-icon', 't-class-home-icon', 't-class-capsule'];
+        value?: ["t-class", "t-class-title", "t-class-left-icon", "t-class-home-icon", "t-class-capsule"];
     };
     fixed?: {
         type: BooleanConstructor;

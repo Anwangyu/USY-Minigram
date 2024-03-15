@@ -17,7 +17,7 @@ export interface TdSearchProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-input', 't-class-input-container', 't-class-cancel', 't-class-left', 't-class-right'];
+        value?: ["t-class", "t-class-input", "t-class-input-container", "t-class-cancel", "t-class-left", "t-class-right"];
     };
     cursorSpacing?: {
         type: NumberConstructor;
@@ -41,7 +41,7 @@ export interface TdSearchProps {
     };
     confirmType?: {
         type: StringConstructor;
-        value?: 'send' | 'search' | 'next' | 'go' | 'done';
+        value?: "send" | "search" | "next" | "go" | "done";
     };
     alwaysEmbed?: {
         type: BooleanConstructor;
@@ -93,7 +93,7 @@ export interface TdSearchProps {
     };
     shape?: {
         type: StringConstructor;
-        value?: 'square' | 'round';
+        value?: "square" | "round";
     };
     value?: {
         type: StringConstructor;

@@ -21,7 +21,7 @@ export interface TdSwitchProps {
     };
     size?: {
         type: StringConstructor;
-        value?: 'small' | 'medium' | 'large';
+        value?: "small" | "medium" | "large";
     };
     style?: {
         type: StringConstructor;
@@ -36,4 +36,5 @@ export interface TdSwitchProps {
         value?: SwitchValue;
     };
 }
+
 export declare type SwitchValue = string | number | boolean;

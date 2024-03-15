@@ -1,4 +1,5 @@
-import { SuperComponent, RelationsOptions } from '../common/src/index';
+import {SuperComponent, RelationsOptions} from "../common/src/index";
+
 export default class AvatarGroup extends SuperComponent {
     externalClasses: string[];
     properties: import("./type").TdAvatarGroupProps;
@@ -18,7 +19,7 @@ export default class AvatarGroup extends SuperComponent {
         ready(): void;
     };
     observers: {
-        'cascading, size'(): void;
+        "cascading, size"(): void;
     };
     methods: {
         setClass(): void;

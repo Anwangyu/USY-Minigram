@@ -13,7 +13,7 @@ export interface TdDrawerProps {
     };
     placement?: {
         type: StringConstructor;
-        value?: 'left' | 'right';
+        value?: "left" | "right";
     };
     showOverlay?: {
         type: BooleanConstructor;
@@ -32,6 +32,7 @@ export interface TdDrawerProps {
         value?: number;
     };
 }
+
 export interface DrawerItem {
     title: string;
     icon: string;

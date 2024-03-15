@@ -1,4 +1,5 @@
-import { LoadingProps } from '../loading/index';
+import {LoadingProps} from "../loading/index";
+
 export interface TdPullDownRefreshProps {
     enableBackToTop?: {
         type: BooleanConstructor;
@@ -10,7 +11,7 @@ export interface TdPullDownRefreshProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-loading', 't-class-text', 't-class-indicator'];
+        value?: ["t-class", "t-class-loading", "t-class-text", "t-class-indicator"];
     };
     loadingBarHeight?: {
         type: null;

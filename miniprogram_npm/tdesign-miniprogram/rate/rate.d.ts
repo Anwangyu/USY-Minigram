@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class Rate extends SuperComponent {
     externalClasses: string[];
     properties: import("./type").TdRateProps;
@@ -17,7 +18,7 @@ export default class Rate extends SuperComponent {
         isVisibleToScreenReader: boolean;
     };
     methods: {
-        onTouch(e: WechatMiniprogram.TouchEvent, eventType: 'tap' | 'move'): void;
+        onTouch(e: WechatMiniprogram.TouchEvent, eventType: "tap" | "move"): void;
         onTap(e: WechatMiniprogram.TouchEvent): void;
         onTouchStart(): void;
         onTouchMove(e: WechatMiniprogram.TouchEvent): void;

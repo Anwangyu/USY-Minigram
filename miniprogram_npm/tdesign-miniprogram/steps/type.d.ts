@@ -9,15 +9,15 @@ export interface TdStepsProps {
     };
     currentStatus?: {
         type: StringConstructor;
-        value?: 'default' | 'process' | 'finish' | 'error';
+        value?: "default" | "process" | "finish" | "error";
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     layout?: {
         type: StringConstructor;
-        value?: 'horizontal' | 'vertical';
+        value?: "horizontal" | "vertical";
     };
     readonly?: {
         type: BooleanConstructor;
@@ -25,14 +25,14 @@ export interface TdStepsProps {
     };
     separator?: {
         type: StringConstructor;
-        value?: 'line' | 'dashed' | 'arrow';
+        value?: "line" | "dashed" | "arrow";
     };
     sequence?: {
         type: StringConstructor;
-        value?: 'positive' | 'reverse';
+        value?: "positive" | "reverse";
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'dot';
+        value?: "default" | "dot";
     };
 }

@@ -25,11 +25,11 @@ export interface TdMessageProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-content', 't-class-icon', 't-class-action', 't-class-close-btn'];
+        value?: ["t-class", "t-class-content", "t-class-icon", "t-class-action", "t-class-close-btn"];
     };
     icon?: {
         type: null;
-        value?: boolean | 'info' | 'bell';
+        value?: boolean | "info" | "bell";
     };
     marquee?: {
         type: null;
@@ -60,10 +60,13 @@ export interface TdMessageProps {
         value?: string | object;
     };
 }
-export declare type MessageAlignType = 'left' | 'center';
+
+export declare type MessageAlignType = "left" | "center";
+
 export interface DrawMarquee {
     speed?: number;
     loop?: number;
     delay?: number;
 }
-export declare type MessageThemeList = 'info' | 'success' | 'warning' | 'error';
+
+export declare type MessageThemeList = "info" | "success" | "warning" | "error";

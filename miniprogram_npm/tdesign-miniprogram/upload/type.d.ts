@@ -1,4 +1,5 @@
-import { ImageProps } from '../image/index';
+import {ImageProps} from "../image/index";
+
 export interface TdUploadProps {
     addContent?: {
         type: StringConstructor;
@@ -62,7 +63,7 @@ export interface TdUploadProps {
     };
     source?: {
         type: StringConstructor;
-        value?: 'media' | 'messageFile';
+        value?: "media" | "messageFile";
     };
     draggable?: {
         type: null;
@@ -73,46 +74,57 @@ export interface TdUploadProps {
         value: Transition;
     };
 }
+
 export declare type UploadMpConfig = ImageConfig | VideoConfig;
+
 export interface ImageConfig {
     count?: number;
     sizeType?: Array<SizeTypeValues>;
     sourceType?: Array<SourceTypeValues>;
 }
-export declare type SizeTypeValues = 'original' | 'compressed';
-export declare type SourceTypeValues = 'album' | 'camera';
+
+export declare type SizeTypeValues = "original" | "compressed";
+export declare type SourceTypeValues = "album" | "camera";
+
 export interface VideoConfig {
     sourceType?: Array<SourceTypeValues>;
     compressed?: boolean;
     maxDuration?: number;
-    camera?: 'back' | 'front';
+    camera?: "back" | "front";
 }
+
 export interface UploadDisplayDragEvents {
     onDrop?: (event: DragEvent) => void;
     onDragenter?: (event: DragEvent) => void;
     onDragover?: (event: DragEvent) => void;
     onDragleave?: (event: DragEvent) => void;
 }
+
 export interface UploadFile {
     url: string;
     name?: string;
     size?: number;
-    type?: 'image' | 'video';
+    type?: "image" | "video";
     percent?: number;
-    status: 'loading' | 'reload' | 'failed' | 'done';
+    status: "loading" | "reload" | "failed" | "done";
 }
-export declare type MediaType = 'image' | 'video';
+
+export declare type MediaType = "image" | "video";
+
 export interface SizeLimitObj {
     size: number;
     unit: SizeUnit;
     message?: string;
 }
-export declare type SizeUnitArray = ['B', 'KB', 'MB', 'GB'];
+
+export declare type SizeUnitArray = ["B", "KB", "MB", "GB"];
 export declare type SizeUnit = SizeUnitArray[number];
+
 export interface Draggable {
     vibrate?: boolean;
     collisionVibrate?: boolean;
 }
+
 export interface Transition {
     backTransition?: boolean;
     duration?: number;

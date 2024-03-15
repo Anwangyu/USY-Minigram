@@ -5,7 +5,7 @@ export interface TdToastProps {
     };
     direction?: {
         type: StringConstructor;
-        value?: 'row' | 'column';
+        value?: "row" | "column";
     };
     duration?: {
         type: NumberConstructor;
@@ -13,7 +13,7 @@ export interface TdToastProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     icon?: {
         type: null;
@@ -29,7 +29,7 @@ export interface TdToastProps {
     };
     placement?: {
         type: StringConstructor;
-        value?: 'top' | 'middle' | 'bottom';
+        value?: "top" | "middle" | "bottom";
     };
     preventScrollThrough?: {
         type: BooleanConstructor;
@@ -41,6 +41,6 @@ export interface TdToastProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'loading' | 'success' | 'error';
+        value?: "loading" | "success" | "error";
     };
 }

@@ -1,6 +1,7 @@
 /// <reference types="miniprogram-api-typings" />
 /// <reference types="miniprogram-api-typings" />
 declare type Context = WechatMiniprogram.Page.TrivialInstance | WechatMiniprogram.Component.TrivialInstance;
+
 interface DialogAlertOptionsType {
     context?: Context;
     selector?: string;
@@ -13,13 +14,16 @@ interface DialogAlertOptionsType {
     cancelBtn?: string | object;
     confirmBtn?: string | object;
 }
+
 interface DialogConfirmOptionsType extends DialogAlertOptionsType {
     cancelButtonText?: string;
 }
+
 interface Action {
     content: string;
-    theme?: 'default' | 'primary' | 'danger' | 'light';
+    theme?: "default" | "primary" | "danger" | "light";
 }
+
 interface DialogActionOptionsType {
     context?: Context;
     selector?: string;
@@ -28,8 +32,9 @@ interface DialogActionOptionsType {
     zIndex?: number;
     asyncClose?: boolean;
     actions?: Action[];
-    buttonLayout?: 'vertical' | 'horizontal';
+    buttonLayout?: "vertical" | "horizontal";
 }
+
 declare const _default: {
     alert(options: DialogAlertOptionsType): Promise<unknown>;
     confirm(options: DialogConfirmOptionsType): Promise<unknown>;

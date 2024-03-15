@@ -33,11 +33,11 @@ export interface TdCheckboxProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-icon', 't-class-label', 't-class-content', 't-class-border'];
+        value?: ["t-class", "t-class-icon", "t-class-label", "t-class-content", "t-class-border"];
     };
     icon?: {
         type: null;
-        value?: 'circle' | 'line' | 'rectangle' | string[];
+        value?: "circle" | "line" | "rectangle" | string[];
     };
     indeterminate?: {
         type: BooleanConstructor;
@@ -61,7 +61,7 @@ export interface TdCheckboxProps {
     };
     placement?: {
         type: StringConstructor;
-        value?: 'left' | 'right';
+        value?: "left" | "right";
     };
     readonly?: {
         type: BooleanConstructor;

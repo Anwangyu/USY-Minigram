@@ -17,7 +17,7 @@ export interface TdTextareaProps {
     };
     confirmType?: {
         type: StringConstructor;
-        value?: 'return' | 'send' | 'search' | 'next' | 'go' | 'done';
+        value?: "return" | "send" | "search" | "next" | "go" | "done";
     };
     cursorSpacing?: {
         type: NumberConstructor;
@@ -33,7 +33,7 @@ export interface TdTextareaProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-textarea', 't-class-label'];
+        value?: ["t-class", "t-class-textarea", "t-class-label"];
     };
     fixed?: {
         type: BooleanConstructor;

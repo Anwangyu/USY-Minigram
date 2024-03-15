@@ -17,7 +17,7 @@ export interface TdCollapseProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'card';
+        value?: "default" | "card";
     };
     value?: {
         type: ArrayConstructor;
@@ -28,4 +28,5 @@ export interface TdCollapseProps {
         value?: CollapseValue;
     };
 }
+
 export declare type CollapseValue = Array<string | number>;

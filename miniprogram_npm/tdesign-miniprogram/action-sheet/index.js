@@ -1,5 +1,6 @@
-import { show, close, ActionSheetTheme } from './show';
-export { ActionSheetTheme };
+import {show, close, ActionSheetTheme} from './show';
+
+export {ActionSheetTheme};
 export default {
     show(options) {
         return show(options);

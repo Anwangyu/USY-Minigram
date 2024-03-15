@@ -1,7 +1,9 @@
-import { RelationsOptions, SuperComponent } from '../common/src/index';
-import type { TdDropdownItemProps } from './type';
+import {RelationsOptions, SuperComponent} from "../common/src/index";
+import type {TdDropdownItemProps} from "./type";
+
 export interface DropdownItemProps extends TdDropdownItemProps {
 }
+
 export default class DropdownMenuItem extends SuperComponent {
     externalClasses: string[];
     properties: {
@@ -74,7 +76,7 @@ export default class DropdownMenuItem extends SuperComponent {
     observers: {
         keys(obj: any): void;
         value(v: any): void;
-        'label, computedLabel'(): void;
+        "label, computedLabel"(): void;
         show(visible: any): void;
     };
     methods: {

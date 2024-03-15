@@ -5,7 +5,7 @@ export interface TdSwiperNavProps {
     };
     direction?: {
         type: StringConstructor;
-        value?: 'horizontal' | 'vertical';
+        value?: "horizontal" | "vertical";
     };
     minShowNum?: {
         type: NumberConstructor;
@@ -13,7 +13,7 @@ export interface TdSwiperNavProps {
     };
     paginationPosition?: {
         type: StringConstructor;
-        value?: 'top-left' | 'top' | 'top-right' | 'bottom-left' | 'bottom' | 'bottom-right';
+        value?: "top-left" | "top" | "top-right" | "bottom-left" | "bottom" | "bottom-right";
     };
     showControls?: {
         type: BooleanConstructor;
@@ -28,4 +28,5 @@ export interface TdSwiperNavProps {
         value?: SwiperNavigationType;
     };
 }
-export declare type SwiperNavigationType = 'dots' | 'dots-bar' | 'fraction';
+
+export declare type SwiperNavigationType = "dots" | "dots-bar" | "fraction";

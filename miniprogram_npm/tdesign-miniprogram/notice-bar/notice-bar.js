@@ -1,14 +1,16 @@
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { SuperComponent, wxComponent } from '../common/src/index';
-import { getRect, getAnimationFrame, calcIcon } from '../common/utils';
+import {SuperComponent, wxComponent} from '../common/src/index';
+import {getRect, getAnimationFrame, calcIcon} from '../common/utils';
 import props from './props';
 import config from '../common/config';
-const { prefix } = config;
+
+const {prefix} = config;
 const name = `${prefix}-notice-bar`;
 const THEME_ICON = {
     info: 'info-circle-filled',
@@ -51,8 +53,7 @@ let NoticeBar = class NoticeBar extends SuperComponent {
             visible(visible) {
                 if (visible) {
                     this.show();
-                }
-                else {
+                } else {
                     this.clearNoticeBarAnimation();
                 }
             },
@@ -90,32 +91,33 @@ let NoticeBar = class NoticeBar extends SuperComponent {
                 getAnimationFrame(this, () => {
                     Promise.all([getRect(this, nodeID), getRect(this, warpID)])
                         .then(([nodeRect, wrapRect]) => {
-                        const { marquee } = this.properties;
-                        if (nodeRect == null || wrapRect == null || !nodeRect.width || !wrapRect.width) {
-                            return;
-                        }
-                        if (marquee || wrapRect.width < nodeRect.width) {
-                            const speeding = marquee.speed || 50;
-                            const delaying = marquee.delay || 0;
-                            const animationDuration = ((wrapRect.width + nodeRect.width) / speeding) * 1000;
-                            const firstAnimationDuration = (nodeRect.width / speeding) * 1000;
-                            this.setData({
-                                wrapWidth: Number(wrapRect.width),
-                                nodeWidth: Number(nodeRect.width),
-                                animationDuration: animationDuration,
-                                delay: delaying,
-                                loop: marquee.loop - 1,
-                                firstAnimationDuration: firstAnimationDuration,
-                            });
-                            marquee.loop !== 0 && this.startScrollAnimation(true);
-                        }
-                    })
-                        .catch(() => { });
+                            const {marquee} = this.properties;
+                            if (nodeRect == null || wrapRect == null || !nodeRect.width || !wrapRect.width) {
+                                return;
+                            }
+                            if (marquee || wrapRect.width < nodeRect.width) {
+                                const speeding = marquee.speed || 50;
+                                const delaying = marquee.delay || 0;
+                                const animationDuration = ((wrapRect.width + nodeRect.width) / speeding) * 1000;
+                                const firstAnimationDuration = (nodeRect.width / speeding) * 1000;
+                                this.setData({
+                                    wrapWidth: Number(wrapRect.width),
+                                    nodeWidth: Number(nodeRect.width),
+                                    animationDuration: animationDuration,
+                                    delay: delaying,
+                                    loop: marquee.loop - 1,
+                                    firstAnimationDuration: firstAnimationDuration,
+                                });
+                                marquee.loop !== 0 && this.startScrollAnimation(true);
+                            }
+                        })
+                        .catch(() => {
+                        });
                 });
             },
             startScrollAnimation(isFirstScroll = false) {
                 this.clearNoticeBarAnimation();
-                const { wrapWidth, nodeWidth, firstAnimationDuration, animationDuration, delay } = this.data;
+                const {wrapWidth, nodeWidth, firstAnimationDuration, animationDuration, delay} = this.data;
                 const delayTime = isFirstScroll ? delay : 0;
                 const durationTime = isFirstScroll ? firstAnimationDuration : animationDuration;
                 this.setData({
@@ -127,7 +129,7 @@ let NoticeBar = class NoticeBar extends SuperComponent {
                 getAnimationFrame(this, () => {
                     this.setData({
                         animationData: wx
-                            .createAnimation({ duration: durationTime, timingFunction: 'linear', delay: delayTime })
+                            .createAnimation({duration: durationTime, timingFunction: 'linear', delay: delayTime})
                             .translateX(-nodeWidth)
                             .step()
                             .export(),
@@ -137,11 +139,9 @@ let NoticeBar = class NoticeBar extends SuperComponent {
                     if (this.data.loop > 0) {
                         this.data.loop -= 1;
                         this.startScrollAnimation();
-                    }
-                    else if (this.data.loop === 0) {
-                        this.setData({ animationData: this.resetAnimation.translateX(0).step().export() });
-                    }
-                    else if (this.data.loop < 0) {
+                    } else if (this.data.loop === 0) {
+                        this.setData({animationData: this.resetAnimation.translateX(0).step().export()});
+                    } else if (this.data.loop < 0) {
                         this.startScrollAnimation();
                     }
                 }, durationTime + delayTime);
@@ -156,26 +156,26 @@ let NoticeBar = class NoticeBar extends SuperComponent {
                 this.nextAnimationContext = null;
             },
             setPrefixIcon(v) {
-                const { theme } = this.properties;
+                const {theme} = this.properties;
                 this.setData({
                     _prefixIcon: calcIcon(v, THEME_ICON[theme]),
                 });
             },
             onChange(e) {
-                const { current, source } = e.detail;
-                this.triggerEvent('change', { current, source });
+                const {current, source} = e.detail;
+                this.triggerEvent('change', {current, source});
             },
             clickPrefixIcon() {
-                this.triggerEvent('click', { trigger: 'prefix-icon' });
+                this.triggerEvent('click', {trigger: 'prefix-icon'});
             },
             clickContent() {
-                this.triggerEvent('click', { trigger: 'content' });
+                this.triggerEvent('click', {trigger: 'content'});
             },
             clickSuffixIcon() {
-                this.triggerEvent('click', { trigger: 'suffix-icon' });
+                this.triggerEvent('click', {trigger: 'suffix-icon'});
             },
             clickOperation() {
-                this.triggerEvent('click', { trigger: 'operation' });
+                this.triggerEvent('click', {trigger: 'operation'});
             },
         };
     }

@@ -13,7 +13,7 @@ export interface TdDateTimePickerProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-confirm', 't-class-cancel', 't-class-title'];
+        value?: ["t-class", "t-class-confirm", "t-class-cancel", "t-class-title"];
     };
     format?: {
         type: StringConstructor;
@@ -64,6 +64,7 @@ export interface TdDateTimePickerProps {
         value: String;
     };
 }
+
 export declare type DateTimePickerMode = TimeModeValues | Array<TimeModeValues>;
-export declare type TimeModeValues = 'year' | 'month' | 'date' | 'hour' | 'minute' | 'second';
+export declare type TimeModeValues = "year" | "month" | "date" | "hour" | "minute" | "second";
 export declare type DateValue = string | number;

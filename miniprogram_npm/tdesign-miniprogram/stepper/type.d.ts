@@ -13,7 +13,7 @@ export interface TdStepperProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-input', 't-class-add', 't-class-minus'];
+        value?: ["t-class", "t-class-input", "t-class-add", "t-class-minus"];
     };
     inputWidth?: {
         type: NumberConstructor;
@@ -37,7 +37,7 @@ export interface TdStepperProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'normal' | 'filled' | 'outline';
+        value?: "normal" | "filled" | "outline";
     };
     value?: {
         type: StringConstructor;

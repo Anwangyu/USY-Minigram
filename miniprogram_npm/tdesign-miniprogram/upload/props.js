@@ -53,7 +53,7 @@ const props = {
     },
     transition: {
         type: Object,
-        value: { backTransition: true, duration: 300, timingFunction: 'ease' },
+        value: {backTransition: true, duration: 300, timingFunction: 'ease'},
     },
 };
 export default props;

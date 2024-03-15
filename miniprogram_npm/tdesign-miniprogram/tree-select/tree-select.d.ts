@@ -1,5 +1,6 @@
-import { SuperComponent } from '../common/src/index';
-import type { TreeOptionData } from '../common/common';
+import {SuperComponent} from "../common/src/index";
+import type {TreeOptionData} from "../common/common";
+
 export default class TreeSelect extends SuperComponent {
     externalClasses: string[];
     options: {
@@ -15,7 +16,7 @@ export default class TreeSelect extends SuperComponent {
         event: string;
     }[];
     observers: {
-        'value, options, keys, multiple'(): void;
+        "value, options, keys, multiple"(): void;
     };
     methods: {
         buildTreeOptions(): void;

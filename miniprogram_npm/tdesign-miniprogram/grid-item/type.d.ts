@@ -1,4 +1,5 @@
-import { BadgeProps } from '../badge/index';
+import {BadgeProps} from "../badge/index";
+
 export interface TdGridItemProps {
     badgeProps?: {
         type: ObjectConstructor;
@@ -14,7 +15,7 @@ export interface TdGridItemProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-image', 't-class-text', 't-class-description'];
+        value?: ["t-class", "t-class-image", "t-class-text", "t-class-description"];
     };
     icon?: {
         type: null;
@@ -30,11 +31,11 @@ export interface TdGridItemProps {
     };
     jumpType?: {
         type: StringConstructor;
-        value?: 'redirect-to' | 'switch-tab' | 'relaunch' | 'navigate-to';
+        value?: "redirect-to" | "switch-tab" | "relaunch" | "navigate-to";
     };
     layout?: {
         type: StringConstructor;
-        value?: 'vertical' | 'horizontal';
+        value?: "vertical" | "horizontal";
     };
     text?: {
         type: StringConstructor;

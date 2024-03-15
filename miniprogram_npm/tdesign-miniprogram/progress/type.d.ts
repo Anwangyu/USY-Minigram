@@ -9,7 +9,7 @@ export interface TdProgressProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-bar', 't-class-label'];
+        value?: ["t-class", "t-class-bar", "t-class-label"];
     };
     label?: {
         type: null;
@@ -36,5 +36,6 @@ export interface TdProgressProps {
         value?: string;
     };
 }
-export declare type StatusEnum = 'success' | 'error' | 'warning' | 'active';
-export declare type ThemeEnum = 'line' | 'plump' | 'circle';
+
+export declare type StatusEnum = "success" | "error" | "warning" | "active";
+export declare type ThemeEnum = "line" | "plump" | "circle";

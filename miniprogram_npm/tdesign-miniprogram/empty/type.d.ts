@@ -9,7 +9,7 @@ export interface TdEmptyProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-description', 't-class-image', 't-class-actions'];
+        value?: ["t-class", "t-class-description", "t-class-image", "t-class-actions"];
     };
     icon?: {
         type: null;

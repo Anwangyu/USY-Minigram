@@ -5,7 +5,7 @@ export interface TdIndexesAnchorProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     index?: {
         type: null;

@@ -1,7 +1,7 @@
 export interface TdSkeletonProps {
     animation?: {
         type: StringConstructor;
-        value?: 'gradient' | 'flashed' | 'none';
+        value?: "gradient" | "flashed" | "none";
     };
     style?: {
         type: StringConstructor;
@@ -13,7 +13,7 @@ export interface TdSkeletonProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-avatar', 't-class-image', 't-class-text'];
+        value?: ["t-class", "t-class-avatar", "t-class-image", "t-class-text"];
     };
     loading?: {
         type: BooleanConstructor;
@@ -25,10 +25,12 @@ export interface TdSkeletonProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'avatar' | 'image' | 'text' | 'paragraph';
+        value?: "avatar" | "image" | "text" | "paragraph";
     };
 }
+
 export declare type SkeletonRowCol = Array<Number | SkeletonRowColObj | Array<SkeletonRowColObj>>;
+
 export interface SkeletonRowColObj {
     width?: string;
     size?: string;
@@ -36,5 +38,5 @@ export interface SkeletonRowColObj {
     marginRight?: string;
     marginLeft?: string;
     margin?: string;
-    type?: 'rect' | 'circle' | 'text';
+    type?: "rect" | "circle" | "text";
 }

@@ -1,8 +1,10 @@
 /// <reference types="miniprogram-api-typings" />
-import { SuperComponent } from '../common/src/index';
-import { TdCalendarProps } from './type';
+import {SuperComponent} from "../common/src/index";
+import {TdCalendarProps} from "./type";
+
 export interface CalendarProps extends TdCalendarProps {
 }
+
 export default class Calendar extends SuperComponent {
     externalClasses: string[];
     options: WechatMiniprogram.Component.ComponentOptions;
@@ -27,7 +29,7 @@ export default class Calendar extends SuperComponent {
     observers: {
         type(v: any): void;
         confirmBtn(v: any): void;
-        'firstDayOfWeek,minDate,maxDate'(firstDayOfWeek: any, minDate: any, maxDate: any): void;
+        "firstDayOfWeek,minDate,maxDate"(firstDayOfWeek: any, minDate: any, maxDate: any): void;
         value(v: any): void;
         visible(v: any): void;
         format(v: any): void;

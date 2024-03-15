@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class CheckTag extends SuperComponent {
     data: {
         prefix: string;
@@ -18,7 +19,7 @@ export default class CheckTag extends SuperComponent {
         attached(): void;
     };
     observers: {
-        'size, disabled, checked'(): void;
+        "size, disabled, checked"(): void;
         icon(v: any): void;
     };
     methods: {

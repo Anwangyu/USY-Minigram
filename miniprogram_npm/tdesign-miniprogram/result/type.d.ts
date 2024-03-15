@@ -9,7 +9,7 @@ export interface TdResultProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-description', 't-class-image'];
+        value?: ["t-class", "t-class-description", "t-class-image"];
     };
     icon?: {
         type: null;
@@ -21,7 +21,7 @@ export interface TdResultProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'success' | 'warning' | 'error';
+        value?: "default" | "success" | "warning" | "error";
     };
     title?: {
         type: StringConstructor;

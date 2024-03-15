@@ -5,7 +5,7 @@
 </t-navbar>
 <view class="indexPage">
     <view class="searchBar">
-        <t-search placeholder="搜索" shape="round" />
+        <t-search placeholder="搜索" shape="round"/>
     </view>
     <t-swiper
             current="{{current}}"
@@ -19,7 +19,40 @@
             bind:image-load="onImageLoad"
     >
     </t-swiper>
+    <t-grid class="block" column="{{4}}" theme="card">
+        <t-grid-item text="校园公告" icon="{{img1}}" />
+        <t-grid-item text="校园新闻" image="{{img2}}" />
+        <t-grid-item text="学科展示" image="{{img3}}" />
+        <t-grid-item text="科研成果" image="{{img4}}" />
+        <t-grid-item text="院校介绍" image="{{img5}}" />
+        <t-grid-item text="师资信息" image="{{img6}}" />
+        <t-grid-item text="校友中心" image="{{img7}}" />
+        <t-grid-item text="捐赠支持" image="{{img8}}" />
+    </t-grid>
+    <view class="newsDemoBlock">
+        <text class="newsDemoBlockTitle">新闻速览</text>
+        <view class="newsDemo" id="demo1">
+            <text class="newsDemoTitle">信智学院开启教学研讨会活动</text>
+            <text class="newDemoSubTitle">2024年3月1日</text>
+        </view>
+        <view class="newsDemo" id="demo2">
+            <text class="newsDemoTitle">国史教育基地在三亚学院揭牌</text>
+            <text class="newDemoSubTitle">2024年3月1日</text>
+        </view>
+        <view class="newsDemo" id="demo3">
+            <text class="newsDemoTitle">三亚学院师生热议2024全国两会胜利召开</text>
+            <text class="newDemoSubTitle">2024年3月1日</text>
+        </view>
+        <view class="newsDemo" id="demo4">
+            <text class="newsDemoTitle">产教融合助力精彩假期：积极探索 全新出发</text>
+            <text class="newDemoSubTitle">2024年3月1日</text>
+        </view>
+    </view>
+    <view class="footerBlock">
+        <!--尾部占位块-->
+    </view>
 </view>
+
 
 
 

@@ -1,4 +1,5 @@
-import { SwiperNavProps } from '../swiper-nav/index';
+import {SwiperNavProps} from "../swiper-nav/index";
+
 export interface TdSwiperProps {
     autoplay?: {
         type: BooleanConstructor;
@@ -10,7 +11,7 @@ export interface TdSwiperProps {
     };
     direction?: {
         type: StringConstructor;
-        value?: 'horizontal' | 'vertical';
+        value?: "horizontal" | "vertical";
     };
     displayMultipleItems?: {
         type: NumberConstructor;
@@ -22,7 +23,7 @@ export interface TdSwiperProps {
     };
     easingFunction?: {
         type: StringConstructor;
-        value?: 'default' | 'linear' | 'easeInCubic' | 'easeOutCubic' | 'easeInOutCubic';
+        value?: "default" | "linear" | "easeInCubic" | "easeOutCubic" | "easeInOutCubic";
     };
     height?: {
         type: null;
@@ -54,7 +55,7 @@ export interface TdSwiperProps {
     };
     paginationPosition?: {
         type: StringConstructor;
-        value?: 'top-left' | 'top' | 'top-right' | 'bottom-left' | 'bottom' | 'bottom-right';
+        value?: "top-left" | "top" | "top-right" | "bottom-left" | "bottom" | "bottom-right";
     };
     previousMargin?: {
         type: null;
@@ -65,6 +66,7 @@ export interface TdSwiperProps {
         value?: boolean;
     };
 }
+
 export interface SwiperList {
     value: string;
     ariaLabel: string;

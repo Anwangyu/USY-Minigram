@@ -5,49 +5,53 @@
 </t-navbar>
 
 <view class="example-search">
-  <t-search model:value="{{value}}" placeholder="请输入搜索关键词" shape="round" />
+    <t-search model:value="{{value}}" placeholder="请输入搜索关键词" shape="round"/>
 </view>
 <view class="container">
-  <view class="nav">
-  <view wx:for="{{navItems}}" wx:key="index" class="item {{item.active ? 'active' : ''}}" catchtap="onClick" data-id="{{item.id}}">{{item.name}}</view>
-</view>
-<view class="hurdle">
-  <view class="group">
-        <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
-        <view class="low"></view>
+    <view class="nav">
+        <view wx:for="{{navItems}}" wx:key="index" class="item {{item.active ? 'active' : ''}}" catchtap="onClick"
+              data-id="{{item.id}}">{{item.name}}
         </view>
-        <view class="top-time"></view>
-  </view>
-</view>  
-<view class="hurdle">
-  <view class="group">
-        <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
-        <view class="low"></view>
+    </view>
+    <view class="hurdle">
+        <view class="group">
+            <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
+                <view class="low"></view>
+            </view>
+            <view class="top-time"></view>
         </view>
-        <view class="top-time"></view>
-  </view>
-</view>  
-<view class="hurdle">
-  <view class="group">
-        <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
-        <view class="low"></view>
+    </view>
+    <view class="hurdle">
+        <view class="group">
+            <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
+                <view class="low"></view>
+            </view>
+            <view class="top-time"></view>
         </view>
-        <view class="top-time"></view>
-  </view>
-</view>  <view class="hurdle">
-  <view class="group">
-        <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
-        <view class="low"></view>
+    </view>
+    <view class="hurdle">
+        <view class="group">
+            <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
+                <view class="low"></view>
+            </view>
+            <view class="top-time"></view>
         </view>
-        <view class="top-time"></view>
-  </view>
-</view>  <view class="hurdle">
-  <view class="group">
-        <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
-        <view class="low"></view>
+    </view>
+    <view class="hurdle">
+        <view class="group">
+            <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
+                <view class="low"></view>
+            </view>
+            <view class="top-time"></view>
         </view>
-        <view class="top-time"></view>
-  </view>
-</view>  
+    </view>
+    <view class="hurdle">
+        <view class="group">
+            <view class="image" style="background-image: url(../../image/1.jpg);background-size: 100% 400rpx;">
+                <view class="low"></view>
+            </view>
+            <view class="top-time"></view>
+        </view>
+    </view>
 </view>
 

@@ -1,5 +1,6 @@
-import { SuperComponent } from '../common/src/index';
-import { UploadFile } from './type';
+import {SuperComponent} from "../common/src/index";
+import {UploadFile} from "./type";
+
 export default class Upload extends SuperComponent {
     externalClasses: string[];
     options: {
@@ -26,25 +27,39 @@ export default class Upload extends SuperComponent {
         event: string;
     }[];
     observers: {
-        'files, max, draggable'(files: UploadFile, max: number): void;
+        "files, max, draggable"(files: UploadFile, max: number): void;
         gridConfig(): void;
     };
     lifetimes: {
         ready(): void;
     };
+
     onProofTap(e: any): void;
+
     handleLimit(customFiles: UploadFile[], max: number): void;
+
     triggerSuccessEvent(files: any): void;
+
     triggerFailEvent(err: any): void;
+
     onFileClick(e: any): void;
+
     getFileType(mediaType: string[], tempFilePath: string, fileType?: string): string;
+
     getRandFileName(filePath: any): string;
+
     onDelete(e: any): void;
+
     deleteHandle(index: number): void;
+
     updateGrid(): void;
+
     initDragLayout(): void;
+
     initDragList(): void;
+
     initDragBaseData(): void;
+
     methods: {
         uploadFiles(files: UploadFile[]): Promise<unknown>;
         startUpload(files: UploadFile[]): any;

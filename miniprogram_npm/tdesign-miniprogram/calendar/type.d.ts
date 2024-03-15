@@ -1,4 +1,5 @@
-import { ButtonProps } from '../button/index';
+import {ButtonProps} from "../button/index";
+
 export interface TdCalendarProps {
     autoClose?: {
         type: BooleanConstructor;
@@ -34,7 +35,7 @@ export interface TdCalendarProps {
     };
     type?: {
         type: StringConstructor;
-        value?: 'single' | 'multiple' | 'range';
+        value?: "single" | "multiple" | "range";
     };
     usePopup?: {
         type: BooleanConstructor;
@@ -53,8 +54,10 @@ export interface TdCalendarProps {
         value?: boolean;
     };
 }
+
 export declare type CalendarFormatType = (day: TDate) => TDate;
-export declare type TDateType = 'selected' | 'disabled' | 'start' | 'centre' | 'end' | '';
+export declare type TDateType = "selected" | "disabled" | "start" | "centre" | "end" | "";
+
 export interface TDate {
     date: Date;
     day: number;

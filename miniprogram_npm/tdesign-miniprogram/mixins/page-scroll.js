@@ -1,9 +1,10 @@
-import { getCurrentPage } from '../common/utils';
+import {getCurrentPage} from '../common/utils';
+
 const onPageScroll = function (event) {
     const page = getCurrentPage();
     if (!page)
         return;
-    const { pageScroller } = page;
+    const {pageScroller} = page;
     pageScroller === null || pageScroller === void 0 ? void 0 : pageScroller.forEach((scroller) => {
         if (typeof scroller === 'function') {
             scroller(event);
@@ -23,8 +24,7 @@ export default (funcName = 'onScroll') => {
             }
             if (Array.isArray(page.pageScroller)) {
                 page.pageScroller.push(bindScroller);
-            }
-            else {
+            } else {
                 page.pageScroller =
                     typeof page.onPageScroll === 'function' ? [page.onPageScroll.bind(page), bindScroller] : [bindScroller];
             }

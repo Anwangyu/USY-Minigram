@@ -13,7 +13,7 @@ export interface TdCollapsePanelProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-header', 't-class-content'];
+        value?: ["t-class", "t-class-header", "t-class-content"];
     };
     header?: {
         type: StringConstructor;
@@ -29,7 +29,7 @@ export interface TdCollapsePanelProps {
     };
     placement?: {
         type: StringConstructor;
-        value?: 'bottom' | 'top';
+        value?: "bottom" | "top";
     };
     value?: {
         type: null;

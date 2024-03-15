@@ -9,11 +9,11 @@ export interface TdCellGroupProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class'];
+        value?: ["t-class"];
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'card';
+        value?: "default" | "card";
     };
     title?: {
         type: StringConstructor;

@@ -21,7 +21,7 @@ export interface TdCountDownProps {
     };
     size?: {
         type: StringConstructor;
-        value?: 'small' | 'medium' | 'large';
+        value?: "small" | "medium" | "large";
     };
     splitWithUnit?: {
         type: BooleanConstructor;
@@ -29,7 +29,7 @@ export interface TdCountDownProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'default' | 'round' | 'square';
+        value?: "default" | "round" | "square";
     };
     time: {
         type: NumberConstructor;

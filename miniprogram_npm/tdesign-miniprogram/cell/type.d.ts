@@ -1,7 +1,7 @@
 export interface TdCellProps {
     align?: {
         type: StringConstructor;
-        value?: 'top' | 'middle' | 'bottom';
+        value?: "top" | "middle" | "bottom";
     };
     arrow?: {
         type: null;
@@ -22,14 +22,14 @@ export interface TdCellProps {
     externalClasses?: {
         type: ArrayConstructor;
         value?: [
-            't-class',
-            't-class-title',
-            't-class-note',
-            't-class-description',
-            't-class-thumb',
-            't-class-hover',
-            't-class-left',
-            't-class-right'
+            "t-class",
+            "t-class-title",
+            "t-class-note",
+            "t-class-description",
+            "t-class-thumb",
+            "t-class-hover",
+            "t-class-left",
+            "t-class-right"
         ];
     };
     hover?: {
@@ -42,7 +42,7 @@ export interface TdCellProps {
     };
     jumpType?: {
         type: StringConstructor;
-        value?: 'switchTab' | 'reLaunch' | 'redirectTo' | 'navigateTo';
+        value?: "switchTab" | "reLaunch" | "redirectTo" | "navigateTo";
     };
     leftIcon?: {
         type: null;

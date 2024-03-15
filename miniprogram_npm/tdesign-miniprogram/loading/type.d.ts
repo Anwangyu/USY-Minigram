@@ -9,7 +9,7 @@ export interface TdLoadingProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-text', 't-class-indicator'];
+        value?: ["t-class", "t-class-text", "t-class-indicator"];
     };
     indicator?: {
         type: BooleanConstructor;
@@ -21,7 +21,7 @@ export interface TdLoadingProps {
     };
     layout?: {
         type: StringConstructor;
-        value?: 'horizontal' | 'vertical';
+        value?: "horizontal" | "vertical";
     };
     loading?: {
         type: BooleanConstructor;
@@ -49,6 +49,6 @@ export interface TdLoadingProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'circular' | 'spinner' | 'dots';
+        value?: "circular" | "spinner" | "dots";
     };
 }

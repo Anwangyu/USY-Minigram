@@ -1,4 +1,5 @@
-import { SuperComponent, RelationsOptions } from '../common/src/index';
+import {RelationsOptions, SuperComponent} from "../common/src/index";
+
 export default class Row extends SuperComponent {
     externalClasses: any[];
     properties: import("./type").TdRowProps;

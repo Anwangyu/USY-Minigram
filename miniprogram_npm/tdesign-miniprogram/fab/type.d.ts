@@ -18,6 +18,6 @@ export interface TdFabProps {
     draggable?: {
         type: BooleanConstructor;
         optionalTypes: Array<StringConstructor>;
-        value?: boolean | 'all' | 'vertical' | 'horizontal';
+        value?: boolean | "all" | "vertical" | "horizontal";
     };
 }

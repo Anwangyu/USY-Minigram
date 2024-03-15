@@ -1,4 +1,5 @@
-import { SuperComponent } from '../common/src/index';
+import {SuperComponent} from "../common/src/index";
+
 export default class Image extends SuperComponent {
     externalClasses: string[];
     options: {
@@ -15,7 +16,7 @@ export default class Image extends SuperComponent {
     preSrc: string;
     observers: {
         src(): void;
-        'width, height'(width: any, height: any): void;
+        "width, height"(width: any, height: any): void;
     };
     methods: {
         onLoaded(e: any): void;

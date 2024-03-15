@@ -13,7 +13,7 @@ export interface TdAvatarGroupProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-image', 't-class-content'];
+        value?: ["t-class", "t-class-image", "t-class-content"];
     };
     max?: {
         type: NumberConstructor;
@@ -24,4 +24,5 @@ export interface TdAvatarGroupProps {
         value?: string;
     };
 }
-export declare type CascadingValue = 'left-up' | 'right-up';
+
+export declare type CascadingValue = "left-up" | "right-up";

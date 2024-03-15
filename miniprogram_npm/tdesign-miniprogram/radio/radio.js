@@ -1,13 +1,15 @@
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import config from '../common/config';
-import { SuperComponent, wxComponent } from '../common/src/index';
+import {SuperComponent, wxComponent} from '../common/src/index';
 import Props from './props';
-const { prefix } = config;
+
+const {prefix} = config;
 const name = `${prefix}-radio`;
 let Radio = class Radio extends SuperComponent {
     constructor() {
@@ -25,7 +27,7 @@ let Radio = class Radio extends SuperComponent {
                 type: 'ancestor',
                 linked(parent) {
                     if (parent.data.borderless) {
-                        this.setData({ borderless: true });
+                        this.setData({borderless: true});
                     }
                 },
             },
@@ -38,10 +40,12 @@ let Radio = class Radio extends SuperComponent {
                 this.init();
             },
         };
-        this.properties = Object.assign(Object.assign({}, Props), { borderless: {
+        this.properties = Object.assign(Object.assign({}, Props), {
+            borderless: {
                 type: Boolean,
                 value: false,
-            } });
+            }
+        });
         this.controlledProps = [
             {
                 key: 'checked',
@@ -61,23 +65,22 @@ let Radio = class Radio extends SuperComponent {
             handleTap(e) {
                 if (this.data.disabled || this.data.readonly)
                     return;
-                const { target } = e.currentTarget.dataset;
+                const {target} = e.currentTarget.dataset;
                 if (target === 'text' && this.data.contentDisabled)
                     return;
                 this.doChange();
             },
             doChange() {
-                const { value, checked, allowUncheck } = this.data;
+                const {value, checked, allowUncheck} = this.data;
                 if (this.$parent) {
                     this.$parent.updateValue(checked && allowUncheck ? null : value);
-                }
-                else {
-                    this._trigger('change', { checked: checked && allowUncheck ? false : !checked });
+                } else {
+                    this._trigger('change', {checked: checked && allowUncheck ? false : !checked});
                 }
             },
             init() {
                 var _a, _b, _c, _d, _e, _f;
-                const { icon } = this.data;
+                const {icon} = this.data;
                 const isIdArr = Array.isArray(((_a = this.$parent) === null || _a === void 0 ? void 0 : _a.icon) || icon);
                 this.setData({
                     customIcon: isIdArr,

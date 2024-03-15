@@ -5,7 +5,7 @@ export interface TdStepItemProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-content', 't-class-title', 't-class-description', 't-class-extra'];
+        value?: ["t-class", "t-class-content", "t-class-title", "t-class-description", "t-class-extra"];
     };
     icon?: {
         type: StringConstructor;
@@ -24,7 +24,9 @@ export interface TdStepItemProps {
         value?: string;
     };
 }
-export declare type StepStatus = 'default' | 'process' | 'finish' | 'error';
+
+export declare type StepStatus = "default" | "process" | "finish" | "error";
+
 export interface SubStepItem {
     status: StepStatus;
     title: string;

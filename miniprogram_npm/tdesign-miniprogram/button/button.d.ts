@@ -1,7 +1,9 @@
-import { SuperComponent } from '../common/src/index';
-import type { TdButtonProps } from './type';
+import {SuperComponent} from "../common/src/index";
+import type {TdButtonProps} from "./type";
+
 export interface ButtonProps extends TdButtonProps {
 }
+
 export default class Button extends SuperComponent {
     externalClasses: string[];
     behaviors: string[];
@@ -15,7 +17,7 @@ export default class Button extends SuperComponent {
         classPrefix: string;
     };
     observers: {
-        'theme, size, plain, block, shape, disabled, loading, variant'(): void;
+        "theme, size, plain, block, shape, disabled, loading, variant"(): void;
         icon(icon: any): void;
     };
     lifetimes: {

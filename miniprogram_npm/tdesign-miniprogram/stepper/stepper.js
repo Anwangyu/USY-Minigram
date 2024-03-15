@@ -1,13 +1,15 @@
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { SuperComponent, wxComponent } from '../common/src/index';
+import {SuperComponent, wxComponent} from '../common/src/index';
 import config from '../common/config';
 import props from './props';
-const { prefix } = config;
+
+const {prefix} = config;
 const name = `${prefix}-stepper`;
 let Stepper = class Stepper extends SuperComponent {
     constructor() {
@@ -38,7 +40,7 @@ let Stepper = class Stepper extends SuperComponent {
         };
         this.lifetimes = {
             attached() {
-                const { value, min } = this.properties;
+                const {value, min} = this.properties;
                 this.setData({
                     currentValue: value ? Number(value) : min,
                 });
@@ -46,27 +48,28 @@ let Stepper = class Stepper extends SuperComponent {
         };
         this.methods = {
             handleFocus(e) {
-                const { value } = e.detail;
-                this.triggerEvent('focus', { value });
+                const {value} = e.detail;
+                this.triggerEvent('focus', {value});
             },
             handleInput(e) {
-                const { value } = e.detail;
+                const {value} = e.detail;
                 if (value === '') {
                     return;
                 }
-                this.triggerEvent('input', { value });
+                this.triggerEvent('input', {value});
             },
             handleBlur(e) {
-                const { value: rawValue } = e.detail;
+                const {value: rawValue} = e.detail;
                 const value = this.format(rawValue);
                 this.setValue(value);
-                this.triggerEvent('blur', { value });
+                this.triggerEvent('blur', {value});
             },
         };
     }
+
     isDisabled(type) {
-        const { min, max, disabled } = this.properties;
-        const { currentValue } = this.data;
+        const {min, max, disabled} = this.properties;
+        const {currentValue} = this.data;
         if (disabled) {
             return true;
         }
@@ -78,41 +81,47 @@ let Stepper = class Stepper extends SuperComponent {
         }
         return false;
     }
+
     getLen(num) {
         const numStr = num.toString();
         return numStr.indexOf('.') === -1 ? 0 : numStr.split('.')[1].length;
     }
+
     add(a, b) {
         const maxLen = Math.max(this.getLen(a), this.getLen(b));
         const base = Math.pow(10, maxLen);
         return Math.round(a * base + b * base) / base;
     }
+
     format(value) {
-        const { min, max, step } = this.properties;
+        const {min, max, step} = this.properties;
         const len = Math.max(this.getLen(step), this.getLen(value));
         return Math.max(Math.min(max, value, Number.MAX_SAFE_INTEGER), min, Number.MIN_SAFE_INTEGER).toFixed(len);
     }
+
     setValue(value) {
         value = this.format(value);
         if (this.preValue === value)
             return;
         this.preValue = value;
-        this._trigger('change', { value: Number(value) });
+        this._trigger('change', {value: Number(value)});
     }
+
     minusValue() {
         if (this.isDisabled('minus')) {
-            this.triggerEvent('overlimit', { type: 'minus' });
+            this.triggerEvent('overlimit', {type: 'minus'});
             return false;
         }
-        const { currentValue, step } = this.data;
+        const {currentValue, step} = this.data;
         this.setValue(this.add(currentValue, -step));
     }
+
     plusValue() {
         if (this.isDisabled('plus')) {
-            this.triggerEvent('overlimit', { type: 'plus' });
+            this.triggerEvent('overlimit', {type: 'plus'});
             return false;
         }
-        const { currentValue, step } = this.data;
+        const {currentValue, step} = this.data;
         this.setValue(this.add(currentValue, step));
     }
 };

@@ -1,3 +1,4 @@
-import { TdDraggableProps } from './type';
+import {TdDraggableProps} from "./type";
+
 declare const props: TdDraggableProps;
 export default props;

@@ -2,25 +2,25 @@ var STATUS = ['success', 'error', 'warning'];
 var STATUS_TEXT = ['success', 'error', 'warning', 'active'];
 
 var PRO_THEME = {
-  LINE: 'line',
-  PLUMP: 'plump',
-  CIRCLE: 'circle',
+    LINE: 'line',
+    PLUMP: 'plump',
+    CIRCLE: 'circle',
 };
 
 var STATUS_COLOR = {
-  success: '#00a870',
-  error: '#e34d59',
-  warning: '#ed7b2f',
+    success: '#00a870',
+    error: '#e34d59',
+    warning: '#ed7b2f',
 };
 var LINE_STATUS_ICON = {
-  success: 'check-circle-filled',
-  error: 'error-circle-filled',
-  warning: 'error-circle-filled',
+    success: 'check-circle-filled',
+    error: 'error-circle-filled',
+    warning: 'error-circle-filled',
 };
 var CIRCLE_STATUS_ICON = {
-  success: 'check',
-  error: 'close',
-  warning: 'error',
+    success: 'check',
+    error: 'close',
+    warning: 'error',
 };
 
 /**
@@ -32,32 +32,32 @@ var CIRCLE_STATUS_ICON = {
  */
 
 var getIOSAriaLabel = function (status) {
-  if (status === 'error') {
-    return '进度失败';
-  }
-  if (status === 'warning') {
-    return '进度异常';
-  }
-  return '';
+    if (status === 'error') {
+        return '进度失败';
+    }
+    if (status === 'warning') {
+        return '进度异常';
+    }
+    return '';
 };
 
 var getAndroidAriaLabel = function (status) {
-  if (status === 'error') {
-    return '%' + '，进度失败';
-  }
-  if (status === 'warning') {
-    return '%' + '，进度异常';
-  }
-  return '%';
+    if (status === 'error') {
+        return '%' + '，进度失败';
+    }
+    if (status === 'warning') {
+        return '%' + '，进度异常';
+    }
+    return '%';
 };
 
 module.exports = {
-  STATUS: STATUS,
-  STATUS_TEXT: STATUS_TEXT,
-  PRO_THEME: PRO_THEME,
-  STATUS_COLOR: STATUS_COLOR,
-  LINE_STATUS_ICON: LINE_STATUS_ICON,
-  CIRCLE_STATUS_ICON: CIRCLE_STATUS_ICON,
-  getAndroidAriaLabel: getAndroidAriaLabel,
-  getIOSAriaLabel: getIOSAriaLabel,
+    STATUS: STATUS,
+    STATUS_TEXT: STATUS_TEXT,
+    PRO_THEME: PRO_THEME,
+    STATUS_COLOR: STATUS_COLOR,
+    LINE_STATUS_ICON: LINE_STATUS_ICON,
+    CIRCLE_STATUS_ICON: CIRCLE_STATUS_ICON,
+    getAndroidAriaLabel: getAndroidAriaLabel,
+    getIOSAriaLabel: getIOSAriaLabel,
 };

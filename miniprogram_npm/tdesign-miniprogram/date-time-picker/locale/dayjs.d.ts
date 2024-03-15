@@ -1,4 +1,5 @@
-import enLocale from 'dayjs/locale/en';
+import enLocale from "dayjs/locale/en";
+
 declare const _default: {
     default: {
         key: string;
@@ -34,7 +35,7 @@ declare const _default: {
             cancel: string;
         };
     };
-    'zh-cn': {
+    "zh-cn": {
         key: string;
         label: string;
         locale: enLocale.Locale;
@@ -68,7 +69,7 @@ declare const _default: {
             cancel: string;
         };
     };
-    'zh-tw': {
+    "zh-tw": {
         key: string;
         label: string;
         locale: enLocale.Locale;

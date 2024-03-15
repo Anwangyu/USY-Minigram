@@ -5,7 +5,7 @@ export interface TdBackTopProps {
     };
     externalClasses?: {
         type: ArrayConstructor;
-        value?: ['t-class', 't-class-icon', 't-class-text'];
+        value?: ["t-class", "t-class-icon", "t-class-text"];
     };
     visibilityHeight?: {
         type: NumberConstructor;
@@ -29,6 +29,6 @@ export interface TdBackTopProps {
     };
     theme?: {
         type: StringConstructor;
-        value?: 'round' | 'half-round' | 'round-dark' | 'half-round-dark';
+        value?: "round" | "half-round" | "round-dark" | "half-round-dark";
     };
 }
