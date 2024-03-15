@@ -8,7 +8,6 @@ Component({
             {value: 'user', icon: 'user', ariaLabel: '我的', url: '/pages/user/user'},
         ],
     },
-
     methods: {
         onChange(e) {
             const item = this.data.list.find(item => item.value === e.detail.value);
