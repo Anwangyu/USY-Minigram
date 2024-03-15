@@ -5,7 +5,8 @@
     "pages/alumni/alumni",
     "pages/user/user",
     "pages/server/server",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/ceshiPage/ceshiPage"
   ],
   "window": {
     "navigationBarTextStyle": "black",

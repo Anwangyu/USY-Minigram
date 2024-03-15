@@ -1,12 +1,12 @@
-<!-- alumni.wxml -->
+<!--pages/ceshiPage/ceshiPage.wxml-->
 <t-navbar>
     <view slot="left">
         <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片" />
     </view>
 </t-navbar>
-as
-
-<button bindtap="navigateToAlumniPage">跳转</button>
-
+<text>pages/ceshiPage/ceshiPage.wxml</text>
+跳转测试页面
+123 123
 123
-<button bindtap="gotoB">跳转</button>
+123
+123

@@ -2,6 +2,8 @@
   "component": true,
   "usingComponents": {
     "t-navbar": "tdesign-miniprogram/navbar/navbar",
-    "t-image": "tdesign-miniprogram/image/image"
-  }
+    "t-image": "tdesign-miniprogram/image/image",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-search": "tdesign-miniprogram/search/search"
+    }
 }
