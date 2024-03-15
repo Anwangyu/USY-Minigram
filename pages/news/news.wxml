@@ -1,11 +1,20 @@
-<t-navbar>
+<!-- <t-navbar>
     <view slot="left">
-        <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片"/>
+        <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片" />
     </view>
 </t-navbar>
 
 <text>
     新闻界面
 </text>
-
-
+ -->
+<!-- <view class="fab-container">
+    <t-fab icon="add" button-props="{{fabButton}}" bind:click="handleClick" />
+    <text class="text">分享给朋友</text>
+</view> -->
+<view class="demo__list">
+    <view class="demo__card" wx:for="{{icons}}" wx:key="index">
+        <t-icon name="{{item}}" size="48rpx" data-name="{{item}}" bind:click="onIconTap" />
+        <view class="demo__card-name">{{item}}</view>
+    </view>
+</view>
