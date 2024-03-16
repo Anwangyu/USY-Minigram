@@ -16,37 +16,42 @@
 
         </view>
         <view class="images-container">
-            <image class="applyforId" src="https://img2.imgtp.com/2024/03/08/ySpvrQGh.png">
-            </image>
-            <text class="textSize">
-                校园卡申领
-            </text>
-            <image class="registerforId" src="https://img2.imgtp.com/2024/03/09/3X7sjoFN.png">
-            </image>
-            <text class="textSize">
-                注册认证
-            </text>
+            <view class="" bindtap="applyClick">
+                <image class="applyforId" src="https://img2.imgtp.com/2024/03/08/ySpvrQGh.png">
+                </image>
+                <text class="textSize">
+                    校园卡申领
+                </text>
+            </view>
+            <view class="" bindtap="enrollmentClick">
+                <image class="registerforId" src="https://img2.imgtp.com/2024/03/09/3X7sjoFN.png">
+                </image>
+                <text class="textSize">
+                    注册认证
+                </text>
+            </view>
+
+
         </view>
     </view>
 </view>
 <view class="functionalComponent">
-    <!-- <view class="button-row">
-        <t-button size="large" shape="circle" aria-label="测试">
-            <image src="{{searchIconSrc}}" class="icon-image" />
-        </t-button>
-        <t-button size="large" shape="circle" aria-label="测试">
-            <image src="{{searchIconSrc}}" class="icon-image" />
-        </t-button>
-        <t-button size="large" shape="circle" aria-label="测试">
-            <image src="{{searchIconSrc}}" class="icon-image" />
-        </t-button>
-    </view> -->
-    <!-- 在组件的 wxml 文件中 -->
-    <template name="custom-button">
-        <view class="custom-button" bindtap="onClick">
-            <image src="{{imageUrl}}" class="button-image" />
-        </view>
-    </template>
+
+    <t-grid class="block" column="{{4}}" theme="card">
+        <t-grid-item text="找校友" image="{{xinzhiImage}}" bindtap="findalumniClick" />
+        <t-grid-item text="校友名录" image="{{xinzhiImage}}" bindtap="alumnidirectoryClick" />
+        <t-grid-item text="返校预约" image="{{xinzhiImage}}" bindtap="backtoschoolappointmentClick" />
+        <t-grid-item text="档案查询" image="{{xinzhiImage}}" bindtap="filesearchClick" />
+        <t-grid-item text="证书补办" image="{{xinzhiImage}}" bindtap="replacementofcertificatesClick" />
+        <t-grid-item text="校友互联" image="{{xinzhiImage}}" bindtap="alumniconnectClick" />
+        <t-grid-item text="积分商城" image="{{xinzhiImage}}" bindtap="integralmallClick" />
+        <t-grid-item text="校友企业" image="{{xinzhiImage}}" bindtap="alumnienterprisesClick" />
+        <t-grid-item text="生日祝福" image="{{xinzhiImage}}" bindtap="birthdaywishesClick" />
+        <t-grid-item text="终身学习" image="{{xinzhiImage}}" bindtap="lifelonglearningClick" />
+        <t-grid-item text="校友期刊" image="{{xinzhiImage}}" bindtap="alumnijournalsClick" />
+        <t-grid-item text="爱心捐赠" image="{{xinzhiImage}}" bindtap="compassionatedonationClick" />
+    </t-grid>
+
 
 
 </view>

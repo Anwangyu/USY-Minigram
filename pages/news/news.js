@@ -5,11 +5,11 @@ Page({
     onShow() {
         this.getTabBar().init();
     },
-    navigateToAlumniPage: function () {
-        wx.switchTab({
-            url: '/pages/ceshiPage/ceshiPage', // 跳转到 alumni 页面
-        });
-    },
+    // navigateToAlumniPage: function () {
+    //     wx.switchTab({
+    //         url: '/pages/ceshiPage/ceshiPage', // 跳转到 alumni 页面
+    //     });
+    // },
     gotoB: function () {
         wx.navigateTo({
             url: '/pages/ceshiPage/ceshiPage',

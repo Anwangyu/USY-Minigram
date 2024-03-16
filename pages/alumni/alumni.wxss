@@ -52,10 +52,6 @@
 }
 
 
-
-
-
-
 .organisationalChoices {
     padding-left: 40rpx;
     display: flex;
@@ -129,13 +125,14 @@
     color: #666;
 }
 
-.sum-people {
+.members {
     font-size: 24rpx;
     color: #666;
 }
 
 
 .actSum {
+    padding-top: 10rpx;
     display: flex;
     align-items: center;
 }

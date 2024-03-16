@@ -1,12 +1,14 @@
 <!--pages/ceshiPage/ceshiPage.wxml-->
-<t-navbar>
-    <view slot="left">
-        <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片" />
+<view class="page">
+    <view class="block">
+        <t-navbar title="测试" t-class-title="nav-title" />
     </view>
-</t-navbar>
-<text>pages/ceshiPage/ceshiPage.wxml</text>
-跳转测试页面
-123 123
-123
-123
-123
+
+    <view class="block">
+        <t-navbar class="block" title="测试界面" left-arrow bind:go-back="handleBack" />
+    </view>
+
+
+</view>
+
+<text>测试demo@wzp</text>

@@ -131,3 +131,9 @@
     height: 80%;
     object-fit: contain;
 }
+
+.block {
+    padding-top: 10rpx;
+    display: block;
+    margin-bottom: 32rpx;
+}

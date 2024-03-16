@@ -1,55 +1,46 @@
-<t-navbar>
-    <view slot="left">
-        <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片" />
-    </view>
-</t-navbar>
-
-<view class="alumniPage">
-    <view class="example-search">
-        <t-search placeholder="请输入组织名称关键字" />
-    </view>
-
-</view>
-<view class="organisationalChoices">
-    <scroll-view class="scroll-view" scroll-x>
-        <view class="scroll-content">
-            <block wx:for="{{scrollItems}}" wx:for-item="item" wx:key="id">
-                <navigator url="{{item.url}}" hover-class="navigator-hover-class">
-                    <view class="scroll-item {{item.name === selectedItem ? 'selected' : ''}}" data-item="{{item.name}}"
-                        bindtap="handleItemClick">
-                        <text class="scroll-text">{{item.name}}</text>
-                    </view>
-                </navigator>
-            </block>
+<view class="container">
+    <t-navbar>
+        <view slot="left">
+            <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片" />
         </view>
-    </scroll-view>
-</view>
-
-
-
-<view class="subtotal">
-    <text class="subtotalText">
-        共有99个组织
-    </text>
-</view>
-
-<view class="organisations">
-    <block wx:for="{{organisationItems}}" wx:for-item="item">
-        <view class="organisation-item">
-            <view class="image-container">
-                <t-image src="{{item.imageSrc}}" class="organisation-image" />
+    </t-navbar>
+    <view class="alumniPage">
+        <view class="example-search">
+            <t-search placeholder="请输入组织名称关键字" />
+        </view>
+    </view>
+    <view class="organisationalChoices">
+        <scroll-view class="scroll-view" scroll-x>
+            <view class="scroll-content">
+                <block wx:for="{{scrollItems}}" wx:for-item="item" wx:key="id">
+                    <navigator url="{{item.url}}" hover-class="navigator-hover-class">
+                        <view class="scroll-item {{item.name === selectedItem ? 'selected' : ''}}"
+                            data-item="{{item.name}}" bindtap="handleItemClick">
+                            <text class="scroll-text">{{item.name}}</text>
+                        </view>
+                    </navigator>
+                </block>
             </view>
-            <view class="item-content">
-                <text class="organisation-name">{{item.name}}</text>
-                <view class="actSum">
-                    <text class="activities">{{item.activitiesItems}}</text>
-                    <text class="activityCount">{{item.activityCount}}</text>
-                    <text class="actsumSpace"> </text>
-                    <text class="sum-people">{{item.sumPeople}}</text>
-                    <text class="peopleCount">{{item.peopleCount}}</text>
+        </scroll-view>
+    </view>
+    <view class="organisations">
+        <block wx:for="{{displayedOrganisationItems}}" wx:for-item="item" wx:key="name">
+            <view class="organisation-item">
+                <view class="image-container">
+                    <t-image src="{{xinzhiImage}}" class="organisation-image" />
                 </view>
-                <button class="joinButton" bindtap="handleJoin">加入</button>
+                <view class="item-content">
+                    <text class="organisation-name" bindtap="alumniNameClick">{{item.name}}</text>
+                    <view class="actSum">
+                        <text class="activities" bindtap="activitiesClick">{{item.activitiesItems}}</text>
+                        <text class="activityCount">{{item.activityCount}}</text>
+                        <text class="actsumSpace"> </text>
+                        <text class="members" bindtap="membersClick">{{item.members}}</text>
+                        <text class="peopleCount">{{item.peopleCount}}</text>
+                    </view>
+                    <button class="joinButton" bindtap="handleJoin">加入</button>
+                </view>
             </view>
-        </view>
-    </block>
+        </block>
+    </view>
 </view>

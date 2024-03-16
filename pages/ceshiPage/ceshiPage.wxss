@@ -1,16 +1,12 @@
 /* pages/ceshiPage/ceshiPage.wxss */
 /* *index.wxss*  */
-.page {
+/* .page {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.custom-image {
-    height: 50rpx;
-    width: 200rpx;
-}
 
 .indexPageLodingNotice {
     text-align: center;
-}
+} */
