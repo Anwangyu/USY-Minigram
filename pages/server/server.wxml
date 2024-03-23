@@ -3,40 +3,45 @@
         <t-image t-class="custom-image" src="{{logoImage}}" aria-label="导航栏图片" />
     </view>
 </t-navbar>
-
-<view class="alumniPage">
-
-
-
-    <view class="schoolInfoCard">
+<view class="registration_accreditation">
+    <!-- registration_accreditation=regacc -->
+    <view class="regacc-infocard">
+        <!-- infocard=id -->
         <t-avatar image="{{avatarImage}}" />
-        <view class="custom-image-container" size="large">
-            <image class="custom-USYimage" src="https://img2.imgtp.com/2024/03/08/6Oan6sNx.png" mode="aspectFill">
+        <view class="regacc-id-image_container" size="large">
+            <!-- image_container=imgcon -->
+            <image class="regacc-id-imgcon-USYimage" src="https://img2.imgtp.com/2024/03/08/6Oan6sNx.png" mode="aspectFill">
             </image>
 
         </view>
-        <view class="images-container">
-            <view class="" bindtap="applyClick">
+        <view class="regacc-id-apply_card">
+            <view class="" bindtap="onapplyClick">
                 <image class="applyforId" src="https://img2.imgtp.com/2024/03/08/ySpvrQGh.png">
                 </image>
                 <text class="textSize">
                     校园卡申领
                 </text>
             </view>
-            <view class="" bindtap="enrollmentClick">
+            <view class="" bindtap="onregisterClick">
                 <image class="registerforId" src="https://img2.imgtp.com/2024/03/09/3X7sjoFN.png">
                 </image>
                 <text class="textSize">
                     注册认证
                 </text>
             </view>
-
-
         </view>
     </view>
 </view>
-<view class="functionalComponent">
 
+
+
+
+
+
+
+
+
+<!-- <view class="functionalComponent">
     <t-grid class="block" column="{{4}}" theme="card">
         <t-grid-item text="找校友" image="{{xinzhiImage}}" bindtap="findalumniClick" />
         <t-grid-item text="校友名录" image="{{xinzhiImage}}" bindtap="alumnidirectoryClick" />
@@ -51,7 +56,4 @@
         <t-grid-item text="校友期刊" image="{{xinzhiImage}}" bindtap="alumnijournalsClick" />
         <t-grid-item text="爱心捐赠" image="{{xinzhiImage}}" bindtap="compassionatedonationClick" />
     </t-grid>
-
-
-
-</view>
+</view> -->

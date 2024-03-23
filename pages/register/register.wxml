@@ -1,0 +1,140 @@
+<view class="block">
+    <t-navbar title="注册" left-arrow bind:go-back="handleBack" />
+</view>
+
+<view class="background">
+    <!-- background=bg -->
+    <view class="bg-alonebackground">
+        <form bindsubmit="submitForm">
+            <!-- submitForm=sub -->
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    姓<text class="placeholder">隐藏</text>名
+                </view>
+
+                <text class="colon">:</text>
+                <view class="input-wrapper">
+                    <input class="input" type="text" name="name" placeholder="请输入真实姓名" bindinput="handleNameInput" />
+                </view>
+            </view>
+            <!-- 分割 -->
+            <view class="big_divider"></view>
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    性<text class="placeholder">隐藏</text>别
+                </view>
+
+                <text class="colon">:</text>
+                <view class="input-wrapper">
+                    <picker mode="selector" range="{{genderList}}" bindchange="handleGenderChange">
+                        <input class="input" type="text" name="gender" placeholder="请选择性别" disabled
+                            value="{{selectedGender}}" />
+                    </picker>
+
+                </view>
+            </view>
+            <view class="middle_divider"></view>
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    身份证号
+                </view>
+
+                <text class="colon">:</text>
+                <view class="input-wrapper">
+                    <input class="input" type="text" name="idCard" placeholder="请输入身份证号"
+                        bindinput="handleIdCardInput" />
+                </view>
+            </view>
+            <view class="middle_divider"></view>
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    学<text class="placeholder">隐藏</text>院
+                </view>
+                <text class="colon">:</text>
+                <view class="input-wrapper">
+                    <picker mode="selector" range="{{collegeList}}" bindchange="handleCollegeChange">
+                        <input class="input" type="text" name="college" placeholder="请选择学院" disabled
+                            value="{{selectedCollege}}" />
+                    </picker>
+                </view>
+            </view>
+            <view class="middle_divider"></view>
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    专<text class="placeholder">隐藏</text>业
+                </view>
+                <text class="colon">:</text>
+                <view class="input-wrapper">
+                    <picker mode="selector" range="{{majorList}}" bindchange="handleMajorChange">
+                        <input class="input" type="text" name="major" placeholder="请选择专业" disabled
+                            value="{{selectedMajor}}" />
+                    </picker>
+                </view>
+            </view>
+            <view class="middle_divider"></view>
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    省<text class="placeholder">隐藏</text>市
+                </view>
+                <text class="colon">:</text>
+                <view class="input-wrapper" style="display: flex;">
+                    <picker mode="selector" range="{{provinceList}}" bindchange="handleProvinceChange">
+                        <input class="input_province" type="text" name="province" placeholder="省份" disabled
+                            value="{{selectedProvince}}" />
+                    </picker>
+                    <picker mode="selector" range="{{cityList}}" bindchange="handleCityChange">
+                        <input class="input_province" type="text" name="city" placeholder="城市" disabled
+                            value="{{selectedCity}}" />
+                    </picker>
+                </view>
+            </view>
+            <view class="middle_divider"></view>
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    联系方式
+                </view>
+
+                <text class="colon">:</text>
+                <view class="input-wrapper">
+                    <input class="input" type="text" name="phone" placeholder="请输入手机号码" bindinput="handlePhoneInput" />
+                </view>
+            </view>
+            <view class="middle_divider"></view>
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    毕业班级
+                </view>
+
+                <text class="colon">:</text>
+                <view class="input-wrapper">
+                    <input class="input" type="text" name="classes" placeholder="请输入毕业班级"
+                        bindinput="handleClassesInput" />
+                </view>
+            </view>
+            <view class="middle_divider"></view>
+            <view class="sub-form">
+                <text class="star_symbol">*</text>
+                <view class="text_input">
+                    学位证照
+                </view>
+                <text class="colon">:</text>
+            </view>
+            <view class="upload_image">
+                <t-upload mediaType="{{['video','image']}}" max="{{1}}" files="{{fileList}}" bind:add="handleAddImage"
+                    bind:remove="handleRemoveImage">
+                </t-upload>
+            </view>
+            <button class="submit_button" bindtap="submitData">提交申请</button>
+        </form>
+
+    </view>
+
+</view>

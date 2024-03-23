@@ -1,24 +1,9 @@
-.page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
-.custom-image {
-    height: 50rpx;
-    width: 200rpx;
-}
-
-.indexPageLodingNotice {
-    text-align: center;
-}
-
-.alumniPage {
+.registration_accreditation {
     margin-left: 40rpx;
     margin-right: 40rpx;
 }
-
-.schoolInfoCard {
+.regacc-infocard {
     height: 300rpx;
     padding: 40rpx;
     background: linear-gradient(135deg, #d388ee, #268ba1);
@@ -29,8 +14,7 @@
     justify-content: space-between;
 
 }
-
-.custom-image-container {
+.regacc-id-image_container {
     position: relative;
     width: 380rpx;
     height: 360rpx;
@@ -43,19 +27,43 @@
     align-items: center;
 }
 
-
-.custom-USYimage {
-    width: 380rpx;
+.regacc-id-imgcon-USYimage {
     height: 360rpx;
-    margin-left: auto;
-    border-radius: 10%;
 }
 
-.images-container {
+.regacc-id-apply_card {
     display: flex;
     flex-direction: column;
     margin-top: -100rpx;
 }
+
+
+
+
+
+
+
+
+.custom-image {
+    height: 50rpx;
+    width: 200rpx;
+}
+
+.indexPageLodingNotice {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .applyforId {
     width: 100rpx;
@@ -99,7 +107,7 @@
 
 
 
-
+/* 
 .button-row {
     display: flex;
     justify-content: space-between;
@@ -110,12 +118,12 @@
 .button-image {
     width: 10px;
     height: 10px;
-}
+} */
 
 
 
 
-.custom-button {
+/* .custom-button {
     width: 100px;
     height: 100px;
     background-color: #ffffff;
@@ -136,4 +144,4 @@
     padding-top: 10rpx;
     display: block;
     margin-bottom: 32rpx;
-}
+} */

@@ -1,0 +1,93 @@
+/* pages/register/register.wxss */
+
+.background {
+    background-color: #f0f0f0;
+    padding: 6rpx;
+
+}
+
+.bg-alonebackground {
+    background-color: rgb(255, 255, 255);
+}
+
+.sub-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+
+    margin-top: 10rpx;
+    height: 88rpx;
+}
+
+.star_symbol {
+    color: red;
+
+    margin-right: 4px;
+
+}
+
+.colon {
+    font-size: 38rpx;
+    color: #333;
+}
+
+.space {
+    margin-right: -25rpx;
+
+}
+
+.text_input {
+    flex-grow: 1;
+
+    max-width: 140rpx;
+    margin-right: 10px;
+}
+
+.input-wrapper {
+    flex-grow: 2;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    padding: 10rpx;
+
+}
+
+.input_province {
+    width: 80px;
+    height: 100%;
+    padding: 10rpx;
+}
+
+.placeholder {
+    visibility: hidden;
+
+}
+
+.big_divider {
+    width: 100%;
+    height: 40rpx;
+    background-color: #f0f0f0;
+    margin: 8rpx 0;
+
+}
+
+.middle_divider {
+    width: 100%;
+    height: 10rpx;
+    background-color: #f0f0f0;
+    margin: 8rpx 0;
+
+}
+
+.upload_image {
+    margin: 0 auto;
+}
+
+.submit_button {
+    margin: 10rpx;
+}

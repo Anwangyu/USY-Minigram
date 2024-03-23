@@ -7,7 +7,9 @@
     "pages/server/server",
     "pages/logs/logs",
     "pages/ceshiPage/ceshiPage",
-    "pages/organisationalpagings/organisationalPagings"
+    "pages/organisationalpagings/organisationalPagings",
+    "pages/register/register",
+    "pages/applyCard/applyCard"
   ],
   "window": {
     "navigationBarTextStyle": "black",

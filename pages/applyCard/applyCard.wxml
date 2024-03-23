@@ -1,0 +1,9 @@
+<view class="block">
+    <t-navbar title="校友卡" left-arrow bind:go-back="handleBack" />
+</view>
+
+<view class="wrapper">
+    <t-upload mediaType="{{['video','image']}}" max="{{1}}" files="{{fileList}}" bind:add="handleAdd"
+        bind:remove="handleRemove">
+    </t-upload>
+</view>
