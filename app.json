@@ -6,7 +6,8 @@
     "pages/user/user",
     "pages/server/server",
     "pages/logs/logs",
-    "pages/ceshiPage/ceshiPage"
+    "pages/ceshiPage/ceshiPage",
+    "pages/organisationalpagings/organisationalPagings"
   ],
   "window": {
     "navigationBarTextStyle": "black",

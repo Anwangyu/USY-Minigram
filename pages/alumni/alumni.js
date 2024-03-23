@@ -4,13 +4,13 @@ Page({
         xinzhiImage: 'https://img2.imgtp.com/2024/03/17/ou2wqstL.jpg',
         scrollItems: [
             { id: 1, name: "全部", selected: true },
-            { id: 2, name: "我的组织", selected: false, url: "/pages/news/news" },
-            { id: 3, name: "校友总会", selected: false, url: "/pages/news/news" },
-            { id: 4, name: "地方校友会", selected: false, url: "/pages/news/news" },
-            { id: 5, name: "院系校友会", selected: false, url: "/pages/news/news" },
-            { id: 6, name: "行业校友会", selected: false, url: "/pages/news/news" },
-            { id: 7, name: "年级校友会", selected: false, url: "/pages/news/news" },
-            { id: 8, name: "班级空间", selected: false, url: "/pages/news/news" }
+            { id: 2, name: "我的组织", selected: false },
+            { id: 3, name: "校友总会", selected: false },
+            { id: 4, name: "地方校友会", selected: false },
+            { id: 5, name: "院系校友会", selected: false },
+            { id: 6, name: "行业校友会", selected: false },
+            { id: 7, name: "年级校友会", selected: false },
+            { id: 8, name: "班级空间", selected: false }
         ],
 
         organisationItems: [
@@ -158,7 +158,7 @@ Page({
     },
     membersClick: function () {
         wx.navigateTo({
-            url: '/pages/ceshiPage/ceshiPage',
+            url: '../ceshiPage/ceshiPage',
             success: function (res) {
                 // success
             },
@@ -172,7 +172,7 @@ Page({
     },
     alumniNameClick: function () {
         wx.navigateTo({
-            url: '/pages/ceshiPage/ceshiPage',
+            url: '../organisationalpagings/organisationalPagings',
             success: function (res) {
                 // success
             },
@@ -183,7 +183,6 @@ Page({
                 // complete
             }
         })
-
     },
 
     handleItemClick(event) {

@@ -1,0 +1,145 @@
+<!--pages/organisationalpagings/organisationalPagings.wxml-->
+<!-- @author wzp-->
+<view class="top_navigation">
+    <t-navbar left-arrow title="校友总会测试" />
+</view>
+
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+
+</view>
+
+
+<view class="rotationStyles" hover-class="none" hover-stop-propagation="false">
+    <t-swiper current="{{current}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}"
+        list="{{swiperList}}" navigation="{{ { type: 'dots-bar' } }}" />
+</view>
+
+<t-grid class="organisational_function" column="{{5}}" theme="card">
+    <t-grid-item text="简介" image="{{imgSynopsis}}" bindtap="onSynopsisClick" />
+    <t-grid-item text="联系" image="{{imgLiaise}}" bindtap="onLiaiseClick" />
+    <t-grid-item text="成员" image="{{imgMembers}}" bindtap="onMembersClick" />
+    <t-grid-item text="相册" image="{{imgAlbum}}" bindtap="onAlbumClick" />
+    <t-grid-item text="留言" image="{{imgMessage}}" bindtap="onMessageClick" />
+</t-grid>
+
+<view class="organisational_information">
+    <!-- Organisational information = oi-->
+    <view class="oi-flex">
+        <view class="oi-flex-information" >
+            <!-- information=info -->
+            <image src="{{organisationalIcon}}" class="oi-flex-info-icon" />
+            <text>组织资讯</text>
+        </view>
+        <view class="oi-flex-more" bindtap="onMoreClick">
+            <text>更多</text>
+            <image src="{{moreIcon}}" class="oi-flex-more-icon" />
+        </view>
+    </view>
+    <t-divider />
+
+    <view class="container_Information">
+        <!-- container_Information=coninfo -->
+        <image class="coninfo-image" src="{{news01}}" />
+        <text class="coninfo-description">海南省委教育工委书记，省教育厅党组书记、厅长李湖到三亚学院调研</text>
+    </view>
+    <t-divider />
+    <view class="container_Information">
+        <!-- container_Information=coninfo -->
+        <image class="coninfo-image" src="{{news02}}" />
+        <text class="coninfo-description">2023-2024学年春季学期产业学院建设工作第一次会议顺利召开</text>
+    </view>
+    <t-divider />
+    <view class="container_Information">
+        <!-- container_Information=coninfo -->
+        <image class="coninfo-image" src="{{news03}}" />
+        <text class="coninfo-description">Indonesian SMA Hidayatullah Semarang study tour group visits University of Sanya</text>
+    </view>
+    <t-divider />
+
+
+
+    <view class="oi-flex" >
+        <view class="oi-flex-activities" >
+            <!-- activities=act -->
+            <image src="{{organisationalIcon}}" class="oi-flex-act-icon" />
+            <text>组织活动</text>
+        </view>
+        <view class="oi-flex-more" bindtap="onMoreClick">
+            <text>更多</text>
+            <image src="{{moreIcon}}" class="oi-flex-more-icon" />
+        </view>
+    </view>
+    <t-divider />
+
+
+    <view class="container_Information">
+        <!-- container_Information=coninfo -->
+        <image class="coninfo-image" src="{{activities01}}" />
+        <text class="coninfo-description">三亚学院举行新春团拜及走访慰问活动</text>
+    </view>
+    <t-divider />
+    <view class="container_Information">
+        <!-- container_Information=coninfo -->
+        <image class="coninfo-image" src="{{activities02}}" />
+        <text class="coninfo-description">《三亚日报》报道三亚学院校企联合开展红色研学活动 激活红色基因 探寻校内外协同育人模式</text>
+    </view>
+    <t-divider />
+    <view class="container_Information">
+        <!-- container_Information=coninfo -->
+        <image class="coninfo-image" src="{{activities03}}" />
+        <text class="coninfo-description">学术沙龙预告 | 盛宝学院科研沙龙活动：人工智能经济（AIGC）大模型</text>
+    </view>
+    <t-divider />
+
+    
+    <view class="oi-flex" >
+        <view class="oi-flex-album" >
+            <!--  -->
+            <image src="{{organisationalIcon}}" class="oi-flex-album-icon" />
+            <text>组织相册</text>
+        </view>
+        <view class="oi-flex-more" bindtap="onMoreClick">
+            <text>更多</text>
+            <image src="{{moreIcon}}" class="oi-flex-more-icon" />
+        </view>
+        
+    </view>
+    <t-divider />
+    <view class="oi-container_album">
+        <!-- container_album=conbum -->
+        <image class="oi-conbum-image" src="{{albums01}}" />
+        <image class="oi-conbum-image" src="{{albums02}}" />
+        <image class="oi-conbum-image" src="{{albums03}}" />
+    </view>
+
+    <view class="oi-flex" >
+        <view class="oi-flex-album" >
+            <!--  -->
+            <image src="{{organisationalIcon}}" class="oi-flex-album-icon" />
+            <text>组织留言</text>
+        </view>
+        <view class="oi-flex-more" bindtap="onMoreClick">
+            <text>更多</text>
+            <image src="{{moreIcon}}" class="oi-flex-more-icon" />
+        </view>
+    </view>
+    <view >
+        <t-divider />
+        <t-avatar class="useravatar_message" image="{{image}}" size="small" />
+        <text>123</text>
+        <text>shijian </text>
+        
+        
+        <t-divider />
+        <t-avatar class="useravatar_message" image="{{image}}" size="small" />
+    
+    </view>
+   
+
+
+</view>
+
+
+
+

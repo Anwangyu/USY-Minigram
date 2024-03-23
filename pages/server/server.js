@@ -2,9 +2,6 @@ Page({
   data: {
     logoImage: 'https://img.kindyear.cn/images/2024/03/07/a18204658171be7569751fb2ec352281.png',
     searchIconSrc: 'https://img2.imgtp.com/2024/03/09/3X7sjoFN.png',
-    img1: 'https://tdesign.gtimg.com/mobile/demos/example1.png',
-    img2: 'https://tdesign.gtimg.com/mobile/demos/example2.png',
-    img3: 'https://tdesign.gtimg.com/mobile/demos/example3.png',
     xinzhiImage: 'https://img2.imgtp.com/2024/03/17/ou2wqstL.jpg'
 
   },

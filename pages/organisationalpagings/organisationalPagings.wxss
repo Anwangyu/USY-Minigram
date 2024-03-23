@@ -1,0 +1,120 @@
+/* pages/organisationalpagings/organisationalPagings.wxss */
+.img {}
+
+
+.oi-flex-information {
+    padding-left: 10rpx;
+    display: flex;
+    align-items: center;
+}
+/* 为了让图片和文字垂直居中，可以使用 flex 布局 */
+.oi-flex {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20rpx;
+}
+.oi-flex-more {
+    display: flex;
+    align-items: center;
+}
+.oi-flex-info-icon {
+    width: 20px;
+    height: 20px;
+}
+.oi-flex-more-icon{
+    width: 20px;
+    height: 20px;
+}
+.oi-flex-activities{    
+    padding-left: 10rpx;
+    display: flex;
+    align-items: center;
+}
+.oi-flex-act-icon{    
+    width: 20px;
+    height: 20px;
+}
+.oi-flex-album{    
+    padding-left: 10rpx;
+    display: flex;
+    align-items: center;
+}
+.oi-flex-album-icon{    
+    width: 20px;
+    height: 20px;
+}
+
+/* 资讯父类容器 */
+.container_Information {
+    display: flex;
+    align-items: center;
+    align-items: flex-start; 
+    padding-right: 30rpx;
+    margin-top: 10rpx;
+}
+/* 资讯图片处理 */
+.coninfo-image {
+    padding-left: 35rpx;
+    width: 200rpx;
+    height: 160rpx; 
+    margin-right: 40rpx; 
+    flex-shrink: 0; 
+}
+/* 组织文字大小 */
+.coninfo-description {
+    font-size: 30rpx; 
+    margin-left: -25rpx;
+}
+.top_navigation {
+
+    display: block;
+    margin-bottom: 48rpx;
+}
+
+.organisational_function {
+    display: block;
+    margin-bottom: 32rpx;
+}
+/* 功能栏TDesign */
+.rotationStyles {
+    margin-left: 36rpx;
+    width: 90%;
+    height: 90%;
+
+}
+
+/* 
+oi-flex-activities
+oi-flex-act-icon
+oi-flex-album
+organisational_information
+ */
+
+ /* 整体容器使用flex布局 */
+.oi-conbum-image {
+    padding-left: 35rpx;
+    width: 200rpx;
+    height: 160rpx; 
+    margin-right: 10rpx; 
+    flex-shrink: 0; 
+}
+.oi-container_album{
+    display: flex;
+    align-items: center;
+    align-items: flex-start; 
+    flex-direction: row ; 
+    margin-top: 10rpx;
+}
+
+
+.useravatar_message {
+    margin-left: 32rpx;
+  }
+  
+
+
+
+
+
+
