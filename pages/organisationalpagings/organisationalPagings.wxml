@@ -26,7 +26,7 @@
 <view class="organisational_information">
     <!-- Organisational information = oi-->
     <view class="oi-flex">
-        <view class="oi-flex-information" >
+        <view class="oi-flex-information">
             <!-- information=info -->
             <image src="{{organisationalIcon}}" class="oi-flex-info-icon" />
             <text>组织资讯</text>
@@ -53,14 +53,15 @@
     <view class="container_Information">
         <!-- container_Information=coninfo -->
         <image class="coninfo-image" src="{{news03}}" />
-        <text class="coninfo-description">Indonesian SMA Hidayatullah Semarang study tour group visits University of Sanya</text>
+        <text class="coninfo-description">Indonesian SMA Hidayatullah Semarang study tour group visits University of
+            Sanya</text>
     </view>
     <t-divider />
 
 
 
-    <view class="oi-flex" >
-        <view class="oi-flex-activities" >
+    <view class="oi-flex">
+        <view class="oi-flex-activities">
             <!-- activities=act -->
             <image src="{{organisationalIcon}}" class="oi-flex-act-icon" />
             <text>组织活动</text>
@@ -92,9 +93,9 @@
     </view>
     <t-divider />
 
-    
-    <view class="oi-flex" >
-        <view class="oi-flex-album" >
+
+    <view class="oi-flex">
+        <view class="oi-flex-album">
             <!--  -->
             <image src="{{organisationalIcon}}" class="oi-flex-album-icon" />
             <text>组织相册</text>
@@ -103,7 +104,7 @@
             <text>更多</text>
             <image src="{{moreIcon}}" class="oi-flex-more-icon" />
         </view>
-        
+
     </view>
     <t-divider />
     <view class="oi-container_album">
@@ -113,8 +114,8 @@
         <image class="oi-conbum-image" src="{{albums03}}" />
     </view>
 
-    <view class="oi-flex" >
-        <view class="oi-flex-album" >
+    <view class="oi-flex">
+        <view class="oi-flex-album">
             <!--  -->
             <image src="{{organisationalIcon}}" class="oi-flex-album-icon" />
             <text>组织留言</text>
@@ -124,22 +125,18 @@
             <image src="{{moreIcon}}" class="oi-flex-more-icon" />
         </view>
     </view>
-    <view >
+    <view>
         <t-divider />
         <t-avatar class="useravatar_message" image="{{image}}" size="small" />
-        <text>123</text>
-        <text>shijian </text>
-        
-        
+        <!-- <text>123</text>
+        <text>shijian </text> -->
+
+
         <t-divider />
         <t-avatar class="useravatar_message" image="{{image}}" size="small" />
-    
+
     </view>
-   
+
 
 
 </view>
-
-
-
-

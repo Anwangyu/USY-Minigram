@@ -1,23 +1,29 @@
-
 .registration_accreditation {
     margin-left: 40rpx;
     margin-right: 40rpx;
 }
+
 .regacc-infocard {
-    height: 300rpx;
-    padding: 40rpx;
-    background: linear-gradient(135deg, #d388ee, #268ba1);
+    height: 520rpx;
+    padding: 21rpx;
+    background-image: url('https://img2.imgtp.com/2024/03/22/8VMjmY56.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 40rpx;
     box-shadow: 2rpx 2rpx 20rpx #efefef;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
+
+
 .regacc-id-image_container {
     position: relative;
-    width: 380rpx;
-    height: 360rpx;
+    margin-top: -200rpx;
+    width: 420rpx;
+    height: 340rpx;
     margin-right: 90rpx;
     border-radius: 20%;
     overflow: hidden;
@@ -34,36 +40,13 @@
 .regacc-id-apply_card {
     display: flex;
     flex-direction: column;
-    margin-top: -100rpx;
+    margin-top: -200px;
 }
-
-
-
-
-
-
-
 
 .custom-image {
     height: 50rpx;
     width: 200rpx;
 }
-
-.indexPageLodingNotice {
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 .applyforId {
     width: 100rpx;
@@ -79,69 +62,11 @@
 
 .textSize {
     font-size: 24rpx;
+    font-family: Arial, sans-serif;
+    color: #1a1717;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     margin-top: -40rpx;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-
-.functionalComponent {
-    margin-top: 10px;
-    padding-top: 5px;
-    background: linear-gradient(135deg, #d5f1f4, #9dc3fb);
-    width: auto;
-    height: 660rpx;
-    display: flex;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-/*------------下测试------------*/
-
-
-
-/* 
-.button-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.button-image {
-    width: 10px;
-    height: 10px;
-} */
-
-
-
-
-/* .custom-button {
-    width: 100px;
-    height: 100px;
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-image {
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-}
-
-.block {
-    padding-top: 10rpx;
-    display: block;
-    margin-bottom: 32rpx;
-} */

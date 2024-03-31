@@ -7,21 +7,12 @@
     <!-- registration_accreditation=regacc -->
     <view class="regacc-infocard">
         <!-- infocard=id -->
-        <t-avatar image="{{avatarImage}}" />
         <view class="regacc-id-image_container" size="large">
             <!-- image_container=imgcon -->
-            <image class="regacc-id-imgcon-USYimage" src="https://img2.imgtp.com/2024/03/08/6Oan6sNx.png" mode="aspectFill">
+            <image class="regacc-id-imgcon-USYimage" src="{{USYIdCard}}" mode="aspectFill">
             </image>
-
         </view>
         <view class="regacc-id-apply_card">
-            <view class="" bindtap="onapplyClick">
-                <image class="applyforId" src="https://img2.imgtp.com/2024/03/08/ySpvrQGh.png">
-                </image>
-                <text class="textSize">
-                    校园卡申领
-                </text>
-            </view>
             <view class="" bindtap="onregisterClick">
                 <image class="registerforId" src="https://img2.imgtp.com/2024/03/09/3X7sjoFN.png">
                 </image>
@@ -32,9 +23,6 @@
         </view>
     </view>
 </view>
-
-
-
 
 
 
