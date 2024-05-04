@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .registration_accreditation {
     margin-left: 40rpx;
     margin-right: 40rpx;
@@ -38,6 +39,10 @@
 }
 
 .regacc-id-apply_card {
+=======
+.page {
+    height: 100vh;
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
     display: flex;
     flex-direction: column;
     margin-top: -200px;
@@ -48,6 +53,57 @@
     width: 200rpx;
 }
 
+<<<<<<< HEAD
+=======
+.indexPageLodingNotice {
+    text-align: center;
+}
+
+.alumniPage {
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+}
+
+.schoolInfoCard {
+    height: 300rpx;
+    padding: 40rpx;
+    background: linear-gradient(135deg, #d388ee, #268ba1);
+    border-radius: 40rpx;
+    box-shadow: 2rpx 2rpx 20rpx #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.custom-image-container {
+    position: relative;
+    width: 380rpx;
+    height: 360rpx;
+    margin-right: 90rpx;
+    border-radius: 20%;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.custom-USYimage {
+    width: 380rpx;
+    height: 360rpx;
+    margin-left: auto;
+    border-radius: 10%;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -100rpx;
+}
+
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
 .applyforId {
     width: 100rpx;
     height: 100rpx;
@@ -62,11 +118,72 @@
 
 .textSize {
     font-size: 24rpx;
+<<<<<<< HEAD
     font-family: Arial, sans-serif;
     color: #1a1717;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+=======
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
     margin-top: -40rpx;
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
+=======
+}
+
+
+
+
+
+.functionalComponent {
+    margin-top: 10px;
+    padding-top: 5px;
+    background: linear-gradient(135deg, #d5f1f4, #9dc3fb);
+    width: auto;
+    height: 660rpx;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*------------下测试------------*/
+
+
+
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.button-image {
+    width: 10px;
+    height: 10px;
+}
+
+
+
+
+.custom-button {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-image {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
 }

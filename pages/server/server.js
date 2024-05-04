@@ -3,15 +3,20 @@ const simulateAuth = false; // 控制是否模拟用户授权
 Page({
   data: {
     logoImage: 'https://img.kindyear.cn/images/2024/03/07/a18204658171be7569751fb2ec352281.png',
+<<<<<<< HEAD
     searchIconSrc: 'https://img2.imgtp.com/2024/03/09/3X7sjoFN.png',
     xinzhiImage: 'https://img2.imgtp.com/2024/03/17/ou2wqstL.jpg',
     USYImage: 'https://img2.imgtp.com/2024/03/22/8VMjmY56.png',
     USYIdCard: 'https://img2.imgtp.com/2024/03/08/6Oan6sNx.png'
+=======
+    searchIconSrc: 'https://img2.imgtp.com/2024/03/09/3X7sjoFN.png'
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
   },
 
   onShow() {
     this.getTabBar().init();
   },
+<<<<<<< HEAD
 
   onregisterClick: function () {
     if (simulateAuth) {
@@ -82,3 +87,9 @@ Page({
 
 
 });
+=======
+  
+
+});
+
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd

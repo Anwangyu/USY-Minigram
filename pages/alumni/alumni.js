@@ -1,6 +1,7 @@
 Page({
     data: {
         logoImage: 'https://img.kindyear.cn/images/2024/03/07/a18204658171be7569751fb2ec352281.png',
+<<<<<<< HEAD
         xinzhiImage: 'https://img2.imgtp.com/2024/03/17/ou2wqstL.jpg',
         scrollItems: [
             { id: 1, name: "全部", selected: true },
@@ -117,9 +118,52 @@ Page({
         facultyAlumnis: ["信息与智能工程学院", "盛宝金融学院", "体育学院", "人文学院", "财经学院", "理工学院"],
         industryAlumnis: ["计算机行业", "旅游行业", "体育行业", "金融行业"],
         gradeAlumnis: ["20级", "21级", "22级"],
+=======
+        scrollItems: [
+            { name: "全部", selected: true },
+            { name: "我的组织", selected: false },
+            { name: "校友总会", selected: false },
+            { name: "地方校友会", selected: false },
+            { name: "院系校友会", selected: false },
+            { name: "行业校友会", selected: false },
+            { name: "年纪校友会", selected: false },
+            { name: "班级空间", selected: false }
+        ],
+        organisationItems: [
+            {
+                name: "校友总会", activitiesItems: "活动", sumPeople: "成员", activityCount: 5, peopleCount: 5000
+            },
+            {
+                name: "海南校友会", activitiesItems: "活动", sumPeople: "成员", activityCount: 8, peopleCount: 150
+            },
+            {
+                name: "广东校友会", activitiesItems: "活动", sumPeople: "成员", activityCount: 5, peopleCount: 50
+            },
+            {
+                name: "长沙校友会", activitiesItems: "活动", sumPeople: "成员", activityCount: 5, peopleCount: 50
+            },
+            {
+                name: "上海校友会", activitiesItems: "活动", sumPeople: "成员", activityCount: 5, peopleCount: 50
+            },
+            {
+                name: "河南校友会", activitiesItems: "活动", sumPeople: "成员", activityCount: 5, peopleCount: 50
+            },
+            {
+                name: "北京校友会", activitiesItems: "活动", sumPeople: "成员", activityCount: 5, peopleCount: 50
+            },
+            {
+                name: "黑龙江校友会", activitiesItems: "活动", sumPeople: "成员", activityCount: 5, peopleCount: 50
+            },
+            {
+                name: "浙江校友会", activitiesItems: "活动", sumPeople: "成员", activityCount: 5, peopleCount: 50
+            }
+        ]
+
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
     },
 
     onShow() {
+<<<<<<< HEAD
         const tabBar = this.getTabBar();
         if (tabBar) {
             tabBar.init();
@@ -185,6 +229,10 @@ Page({
         })
     },
 
+=======
+        this.getTabBar().init();
+    },
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
     handleItemClick(event) {
         const selectedItem = event.currentTarget.dataset.item;
         this.setData({
@@ -197,6 +245,7 @@ Page({
                 }
             })
         });
+<<<<<<< HEAD
         this.updateDisplayedOrganisationItems();
     },
 
@@ -237,3 +286,8 @@ Page({
         }
     }
 });
+=======
+    }
+});
+
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd

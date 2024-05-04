@@ -52,6 +52,13 @@
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
 .organisationalChoices {
     padding-left: 40rpx;
     display: flex;
@@ -125,14 +132,21 @@
     color: #666;
 }
 
+<<<<<<< HEAD
 .members {
+=======
+.sum-people {
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
     font-size: 24rpx;
     color: #666;
 }
 
 
 .actSum {
+<<<<<<< HEAD
     padding-top: 10rpx;
+=======
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
     display: flex;
     align-items: center;
 }

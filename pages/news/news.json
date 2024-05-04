@@ -1,8 +1,13 @@
 {
   "component": true,
   "usingComponents": {
+<<<<<<< HEAD
     "t-navbar": "tdesign-miniprogram/navbar/navbar",
     "t-image": "tdesign-miniprogram/image/image",
     "t-button": "tdesign-miniprogram/button/button"
+=======
+    "t-fab": "tdesign-miniprogram/fab/fab",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+>>>>>>> 00ded4c3a3c2367fd1864fc2995f9112f6ff29fd
   }
 }
